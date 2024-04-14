@@ -8,12 +8,11 @@ body {
   background-position: left 0 top 0, right 0 bottom -20px;
   background-size: 150px 250px, 300px 200px;
   .ex_container {
-    width: 1100px;
-    margin: auto;
-    padding: 50px 0;
+    margin: 50px 0;
     .ex_header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 0 50px;
       img {
         width: 400px;
@@ -30,6 +29,7 @@ body {
       }
     }
     .article_list {
+      margin: auto;
       width: 1000px;
       display: flex;
       justify-content: flex-start;
@@ -56,7 +56,7 @@ body {
     }
     .icon {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       .arrow_left {
         button {
           background-color: #0369b5;
@@ -101,8 +101,8 @@ body {
   background-position: left 0 top 0, right 0 bottom -20px;
   background-size: 150px 250px, 300px 200px;
   .li_container {
+    width: 100%;
     padding-top: 50px;
-    width: 1100px;
     margin: auto;
     position: relative;
     .li_header {
@@ -156,7 +156,7 @@ body {
       align-items: center;
       justify-content: flex-end;
       position: absolute;
-      right: 20px;
+      right: 50px;
       bottom: 20px;
       .books_txt {
         a {

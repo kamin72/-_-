@@ -10,13 +10,12 @@ body {
   background-size: 150px 250px, 300px 200px;
 }
 .explore .ex_container {
-  width: 1100px;
-  margin: auto;
-  padding: 50px 0;
+  margin: 50px 0;
 }
 .explore .ex_container .ex_header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 50px;
 }
 .explore .ex_container .ex_header img {
@@ -33,6 +32,7 @@ body {
   margin-right: 200px;
 }
 .explore .ex_container .article_list {
+  margin: auto;
   width: 1000px;
   display: flex;
   justify-content: flex-start;
@@ -57,7 +57,7 @@ body {
 }
 .explore .ex_container .icon {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .explore .ex_container .icon .arrow_left button {
   background-color: #0369b5;
@@ -97,8 +97,8 @@ body {
   background-size: 150px 250px, 300px 200px;
 }
 .library .li_container {
+  width: 100%;
   padding-top: 50px;
-  width: 1100px;
   margin: auto;
   position: relative;
 }
@@ -151,7 +151,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   position: absolute;
-  right: 20px;
+  right: 50px;
   bottom: 20px;
 }
 .library .li_container .books_icon .books_txt a {
