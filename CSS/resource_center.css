@@ -58,6 +58,7 @@ body {
 .explore .ex_container .icon {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 .explore .ex_container .icon .arrow_left button {
   background-color: #0369b5;
