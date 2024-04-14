@@ -1,21 +1,26 @@
 body {
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
-.recruit_banner {
-  .recruit_container {
+.recruit_container {
+  .recruit_banner::after {
+    content: "";
+    display: block;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+  }
+  .recruit_banner {
     position: relative;
-    .mask {
-      background-color: rgb(0, 0, 0, 0.3);
-      position: absolute;
-      width: 100%;
-      height: 80vh;
-      z-index: 1;
-    }
     .txt {
       position: absolute;
-      bottom: 300px;
-      right: 50px;
-      z-index: 2;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 0);
+      z-index: 1;
       text-align: center;
       line-height: 60px;
       h3 {
@@ -23,6 +28,7 @@ body {
         font-family: "Noto Sans TC", sans-serif;
         font-weight: 500;
         color: #fff;
+        white-space: nowrap;
       }
       p {
         font-size: 20px;
@@ -32,83 +38,89 @@ body {
     }
     .pic {
       width: 100%;
-      z-index: -3;
+      position: relative;
+      z-index: -2;
       img {
         width: 100%;
         height: 80vh;
       }
     }
   }
-}
-.recruit_content {
-  margin: 20px 0;
-  .position {
-    background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 200px 150px;
-    background-position: left 540px top -40px;
-
-    h3 {
-      text-align: center;
-      font-size: 28px;
-      font-family: "Noto Sans TC", sans-serif;
-      font-weight: bold;
-      color: #e89b04;
-      height: 50px;
+  .recruit_content {
+    margin: 40px 0;
+    .position {
+      h3 {
+        background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 200px 150px;
+        background-position: left 50% top 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: bold;
+        color: #e89b04;
+        height: 50px;
+        width: 100%;
+        margin: auto;
+      }
+      ul {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Noto Sans TC", sans-serif;
+        color: #333;
+        li {
+          padding: 10px 0;
+        }
+      }
     }
-    ul {
-      text-align: center;
-      font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif;
-      color: #333;
-      li {
+    .apply {
+      margin: 20px 0;
+      h3 {
+        background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 200px 150px;
+        background-position: left 50% top 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: bold;
+        color: #e89b04;
+        height: 50px;
+        width: 100%;
+        margin: auto;
+      }
+      p {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Noto Sans TC", sans-serif;
+        color: #333;
         padding: 10px 0;
       }
     }
-  }
-  .apply {
-    padding: 20px 0;
-    background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 200px 150px;
-    background-position: left 540px top -20px;
-    h3 {
-      text-align: center;
-      font-size: 28px;
-      font-family: "Noto Sans TC", sans-serif;
-      font-weight: bold;
-      color: #e89b04;
-      height: 50px;
-    }
-    p {
-      text-align: center;
-      font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif;
-      color: #333;
-      padding: 10px 0;
-    }
-  }
-  .contact {
-    padding: 20px 0;
-    background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: 200px 150px;
-    background-position: left 540px top -20px;
-    h3 {
-      text-align: center;
-      font-size: 28px;
-      font-family: "Noto Sans TC", sans-serif;
-      font-weight: bold;
-      color: #e89b04;
-      height: 50px;
-    }
-    ul {
-      text-align: center;
-      font-size: 20px;
-      font-family: "Noto Sans TC", sans-serif;
-      color: #333;
-      li {
-        padding: 10px 0;
+    .contact {
+      margin: 20px 0;
+      h3 {
+        background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: 200px 150px;
+        background-position: left 50% top 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: bold;
+        color: #e89b04;
+        height: 50px;
+        width: 100%;
+        margin: auto;
+      }
+      ul {
+        text-align: center;
+        font-size: 20px;
+        font-family: "Noto Sans TC", sans-serif;
+        color: #333;
+        li {
+          padding: 10px 0;
+        }
       }
     }
   }

@@ -2,113 +2,123 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
-.recruit_banner .recruit_container {
-  position: relative;
-}
-.recruit_banner .recruit_container .mask {
+.recruit_container .recruit_banner::after {
+  content: "";
+  display: block;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 80vh;
-  z-index: 1;
+  z-index: -1;
 }
-.recruit_banner .recruit_container .txt {
+.recruit_container .recruit_banner {
+  position: relative;
+}
+.recruit_container .recruit_banner .txt {
   position: absolute;
-  bottom: 300px;
-  right: 50px;
-  z-index: 2;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 0);
+  z-index: 1;
   text-align: center;
   line-height: 60px;
 }
-.recruit_banner .recruit_container .txt h3 {
+.recruit_container .recruit_banner .txt h3 {
   font-size: 32px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 500;
   color: #fff;
+  white-space: nowrap;
 }
-.recruit_banner .recruit_container .txt p {
+.recruit_container .recruit_banner .txt p {
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
 }
-.recruit_banner .recruit_container .pic {
+.recruit_container .recruit_banner .pic {
   width: 100%;
-  z-index: -3;
+  position: relative;
+  z-index: -2;
 }
-.recruit_banner .recruit_container .pic img {
+.recruit_container .recruit_banner .pic img {
   width: 100%;
   height: 80vh;
 }
-
-.recruit_content {
+.recruit_container .recruit_content {
+  margin: 40px 0;
+}
+.recruit_container .recruit_content .position h3 {
+  background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: 200px 150px;
+  background-position: left 50% top 50%;
+  text-align: center;
+  font-size: 28px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: bold;
+  color: #e89b04;
+  height: 50px;
+  width: 100%;
+  margin: auto;
+}
+.recruit_container .recruit_content .position ul {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #333;
+}
+.recruit_container .recruit_content .position ul li {
+  padding: 10px 0;
+}
+.recruit_container .recruit_content .apply {
   margin: 20px 0;
 }
-.recruit_content .position {
+.recruit_container .recruit_content .apply h3 {
   background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 200px 150px;
-  background-position: left 540px top -40px;
-}
-.recruit_content .position h3 {
+  background-position: left 50% top 50%;
   text-align: center;
   font-size: 28px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
   color: #e89b04;
   height: 50px;
+  width: 100%;
+  margin: auto;
 }
-.recruit_content .position ul {
-  text-align: center;
-  font-size: 20px;
-  font-family: "Noto Sans TC", sans-serif;
-  color: #333;
-}
-.recruit_content .position ul li {
-  padding: 10px 0;
-}
-.recruit_content .apply {
-  padding: 20px 0;
-  background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: 200px 150px;
-  background-position: left 540px top -20px;
-}
-.recruit_content .apply h3 {
-  text-align: center;
-  font-size: 28px;
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: bold;
-  color: #e89b04;
-  height: 50px;
-}
-.recruit_content .apply p {
+.recruit_container .recruit_content .apply p {
   text-align: center;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
   color: #333;
   padding: 10px 0;
 }
-.recruit_content .contact {
-  padding: 20px 0;
+.recruit_container .recruit_content .contact {
+  margin: 20px 0;
+}
+.recruit_container .recruit_content .contact h3 {
   background-image: url(../recruit_pic/wepik-export-202404101422534Iiz-removebg-preview.png);
   background-repeat: no-repeat;
   background-size: 200px 150px;
-  background-position: left 540px top -20px;
-}
-.recruit_content .contact h3 {
+  background-position: left 50% top 50%;
   text-align: center;
   font-size: 28px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
   color: #e89b04;
   height: 50px;
+  width: 100%;
+  margin: auto;
 }
-.recruit_content .contact ul {
+.recruit_container .recruit_content .contact ul {
   text-align: center;
   font-size: 20px;
   font-family: "Noto Sans TC", sans-serif;
   color: #333;
 }
-.recruit_content .contact ul li {
+.recruit_container .recruit_content .contact ul li {
   padding: 10px 0;
 }/*# sourceMappingURL=recruit.css.map */
