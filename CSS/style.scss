@@ -1,0 +1,518 @@
+body {
+  // overflow-x: hidden;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+section.banner {
+  .bn_container {
+    position: relative;
+    .slogan {
+      position: absolute;
+      top: 20px;
+      left: 80px;
+      z-index: 2;
+      p {
+        font-size: 50px;
+        font-family: "Noto Sans TC", sans-serif;
+        font-weight: bold;
+        line-height: 90px;
+        color: #333;
+      }
+    }
+    .slide {
+      width: 90%;
+      aspect-ratio: 16/7;
+      margin: auto;
+      box-shadow: 0px 10px 20px 5px rgb(51, 51, 51, 0.3);
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+section.feature {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+  .ft_container {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .ft_header {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      img {
+        width: 400px;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #0369b5;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+    .ft_content {
+      display: flex;
+      width: 100%;
+      margin-top: 50px;
+      justify-content: center;
+      .txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        gap: 50px;
+        width: 200px;
+        ul {
+          font-family: "Noto Sans TC", sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+          list-style: disc;
+          .slogan_1 {
+            color: #0369b5;
+          }
+          .slogan_2 {
+            color: #e89b04;
+            margin-left: 30px;
+          }
+          .slogan_3 {
+            color: #5cc60a;
+            margin-left: 60px;
+          }
+        }
+      }
+      .pic {
+        display: flex;
+        .idea {
+          width: 300px;
+          height: 400px;
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .background {
+          width: 300px;
+          height: 400px;
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          position: relative;
+          right: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .method {
+          width: 300px;
+          height: 400px;
+          clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+          position: relative;
+          right: 20px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .more_icon {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+      right: 50px;
+      .more_txt {
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #636581;
+          border-bottom: 1px solid #636581;
+        }
+      }
+    }
+  }
+}
+section.course {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+  .cr_container {
+    width: 100%;
+    padding: 50px 0;
+    .cr_header {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      img {
+        width: 400px;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #0369b5;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+    .cr_content {
+      width: 80%;
+      margin: auto;
+      .left_pic {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .txt {
+        width: 700px;
+        margin: auto;
+        position: relative;
+        bottom: 120px;
+        left: 100px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        font-family: "Noto Sans TC", sans-serif;
+        h3 {
+          color: #e89b04;
+          font-size: 20px;
+        }
+        p {
+          color: #636581;
+          font-size: 16px;
+          padding: 5px 0;
+        }
+        .activity_icon {
+          text-align: right;
+          .activity_txt {
+            a {
+              text-decoration: none;
+              font-weight: bold;
+              color: #636581;
+              border-bottom: 1px solid #636581;
+            }
+          }
+        }
+      }
+      .topic_course {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        bottom: 80px;
+        z-index: 1;
+        .exper {
+          width: 260px;
+          height: 190px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .exper::after {
+          content: "主題實驗";
+          display: block;
+          font-weight: bold;
+          font-family: "Noto Sans TC", sans-serif;
+          background-color: #fff;
+          color: #0369b5;
+          border-radius: 5px;
+          padding: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+        .camping {
+          width: 260px;
+          height: 190px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .camping::after {
+          content: "科學體驗";
+          display: block;
+          font-weight: bold;
+          font-family: "Noto Sans TC", sans-serif;
+          background-color: #fff;
+          color: #0369b5;
+          border-radius: 5px;
+          padding: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+        .competition {
+          width: 260px;
+          height: 190px;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .competition::after {
+          content: "專題競賽";
+          display: block;
+          font-weight: bold;
+          font-family: "Noto Sans TC", sans-serif;
+          background-color: #fff;
+          color: #0369b5;
+          border-radius: 5px;
+          padding: 3px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+  }
+}
+.feature_banner {
+  width: 100%;
+  height: 100px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+section.news {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+  .news_container {
+    width: 100%;
+    padding: 50px 0;
+    margin: auto;
+    .news_header {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      img {
+        width: 400px;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #0369b5;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+    .news_content {
+      display: grid;
+      width: 1000px;
+      margin: auto;
+      margin-top: 50px;
+      grid-template-areas:
+        "Emc card1 DNA"
+        "card2 card1 card3"
+        "card2 flask card3";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 10px;
+      color: #333;
+      .Emc {
+        grid-area: Emc;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .card2 {
+        grid-area: card2;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+        .pic {
+          display: flex;
+          height: 200px;
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            flex-grow: 1;
+          }
+        }
+        .txt {
+          background-color: #e89b04;
+          padding: 10px;
+          height: 100px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          font-family: "Noto Sans TC", sans-serif;
+          border-radius: 0 0 10px 10px;
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          p {
+            padding: 10px 0;
+            flex-grow: 1;
+            line-height: 30px;
+            overflow: hidden;
+          }
+          .readmore {
+            width: 100px;
+            background-color: #f3b53b;
+            cursor: pointer;
+            border-color: #f3b53b;
+            border-radius: 5px;
+            align-self: flex-end;
+          }
+        }
+      }
+
+      .card1 {
+        grid-area: card1;
+        display: flex;
+        flex-direction: column;
+        .pic {
+          display: flex;
+          height: 200px;
+          img {
+            width: 100%;
+            flex-grow: 1;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .txt {
+          background-color: #5cc60a;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          font-family: "Noto Sans TC", sans-serif;
+          border-radius: 0 0 10px 10px;
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          p {
+            padding: 10px 0;
+            flex-grow: 1;
+            line-height: 30px;
+          }
+          .readmore {
+            width: 100px;
+            background-color: #71e914;
+            cursor: pointer;
+            border-color: #71e914;
+            border-radius: 5px;
+            align-self: flex-end;
+          }
+        }
+      }
+      .flask {
+        grid-area: flask;
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .DNA {
+        grid-area: DNA;
+        display: flex;
+        img {
+          width: 100%;
+          flex-grow: 1;
+          border-radius: 10px;
+        }
+      }
+      .card3 {
+        grid-area: card3;
+        display: flex;
+        flex-direction: column;
+        .pic {
+          display: flex;
+          height: 200px;
+          img {
+            width: 100%;
+            flex-grow: 1;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .txt {
+          background-color: #74cee4;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          font-family: "Noto Sans TC", sans-serif;
+          border-radius: 0 0 10px 10px;
+          h3 {
+            font-size: 18px;
+            font-weight: bold;
+          }
+          p {
+            padding: 10px 0;
+            line-height: 30px;
+            flex-grow: 1;
+          }
+          .readmore {
+            width: 100px;
+            background-color: #81e3fb;
+            cursor: pointer;
+            border-color: #81e3fb;
+            border-radius: 5px;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+.returnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 20;
+  .circle {
+    background-color: #0369b5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    .arrow_up {
+      color: #fff;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}

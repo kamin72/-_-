@@ -1,0 +1,171 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+.explore {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+  .ex_container {
+    width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+    .ex_header {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      img {
+        width: 400px;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #0369b5;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+    .article_list {
+      width: 1000px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 50px;
+      overflow: hidden;
+      padding-top: 50px;
+      .article {
+        width: 300px;
+        .pic {
+          width: 300px;
+          img {
+            width: 100%;
+          }
+        }
+        .txt {
+          p {
+            font-family: "Noto Sans TC", sans-serif;
+            line-height: 28px;
+            color: #333;
+            padding: 2px 0;
+          }
+        }
+      }
+    }
+    .icon {
+      display: flex;
+      justify-content: flex-end;
+      .arrow_left {
+        button {
+          background-color: #0369b5;
+          margin: 0 30px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          position: relative;
+          cursor: pointer;
+        }
+        svg {
+          position: absolute;
+          top: 2px;
+          left: 8px;
+        }
+      }
+      .arrow_right {
+        button {
+          background-color: #0369b5;
+          margin: 0 30px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          position: relative;
+          cursor: pointer;
+          svg {
+            position: absolute;
+            top: 2px;
+            right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.library {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+  .li_container {
+    padding-top: 50px;
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    .li_header {
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+      img {
+        width: 400px;
+        opacity: 0.5;
+      }
+      h2 {
+        color: #0369b5;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 200px;
+      }
+    }
+    .books_list {
+      .row {
+        .col-12,
+        .col-md-6,
+        .col-xl-3 {
+          .books {
+            width: 235px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            .pic {
+              img {
+                width: 100%;
+              }
+            }
+            .txt {
+              height: 100px;
+              p {
+                font-family: "Noto Sans TC", sans-serif;
+                line-height: 28px;
+                color: #333;
+                padding: 2px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .books_icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      .books_txt {
+        a {
+          text-decoration: none;
+          font-weight: bold;
+          color: #636581;
+          border-bottom: 1px solid #636581;
+        }
+      }
+    }
+  }
+}

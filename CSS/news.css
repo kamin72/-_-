@@ -1,0 +1,177 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.sort {
+  width: 100px;
+  text-align: center;
+}
+.sort .main_list {
+  background-color: #0369b5;
+}
+.sort .main_list li {
+  padding: 10px;
+  position: relative;
+}
+.sort .main_list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.sort .main_list li .sub_list {
+  display: none;
+  background-color: #fff;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 35px;
+}
+.sort .main_list li .sub_list li {
+  border-bottom: 2px solid #0369b5;
+}
+.sort .main_list li .sub_list li a {
+  color: #333;
+}
+.sort .main_list li .sub_list li:hover {
+  background-color: #0369b5;
+}
+.sort .main_list li .sub_list li:hover a {
+  color: #fff;
+}
+.sort li:hover .sub_list {
+  display: block;
+}
+
+.content {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.content .container {
+  width: 1100px;
+}
+.content .container .row .col-12 .card,
+.content .container .row .col-md-6 .card,
+.content .container .row .col-xl-4 .card {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content .container .row .col-12 .card .pic,
+.content .container .row .col-md-6 .card .pic,
+.content .container .row .col-xl-4 .card .pic {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+.content .container .row .col-12 .card .pic img,
+.content .container .row .col-md-6 .card .pic img,
+.content .container .row .col-xl-4 .card .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.content .container .row .col-12 .card .txt,
+.content .container .row .col-md-6 .card .txt,
+.content .container .row .col-xl-4 .card .txt {
+  padding: 10px 20px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.content .container .row .col-12 .card .txt h3,
+.content .container .row .col-md-6 .card .txt h3,
+.content .container .row .col-xl-4 .card .txt h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.content .container .row .col-12 .card .txt .date,
+.content .container .row .col-md-6 .card .txt .date,
+.content .container .row .col-xl-4 .card .txt .date {
+  color: #6d6d6d;
+  padding: 3px 0;
+}
+.content .container .row .col-12 .card .txt p,
+.content .container .row .col-md-6 .card .txt p,
+.content .container .row .col-xl-4 .card .txt p {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 28px;
+  overflow: hidden;
+  color: #fff;
+}
+.content .container .row .col-12:nth-child(1) .txt {
+  background-color: #e89b04;
+}
+.content .container .row .col-12:nth-child(2) .txt {
+  background-color: #e89b04;
+}
+.content .container .row .col-12:nth-child(3) .txt {
+  background-color: #e89b04;
+}
+.content .container .row .col-12:nth-child(4) .txt {
+  background-color: #74cee4;
+}
+.content .container .row .col-12:nth-child(5) .txt {
+  background-color: #74cee4;
+}
+.content .container .row .col-12:nth-child(6) .txt {
+  background-color: #74cee4;
+}
+.content .container .row .col-12:nth-child(7) .txt {
+  background-color: #5cc60a;
+}
+.content .container .row .col-12:nth-child(8) .txt {
+  background-color: #5cc60a;
+}
+.content .container .row .col-12:nth-child(9) .txt {
+  background-color: #5cc60a;
+}
+.content .page_num {
+  text-align: center;
+  padding: 20px 0;
+}
+.content .page_num span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 50%;
+  position: relative;
+}
+.content .page_num span a {
+  text-decoration: none;
+  color: #333;
+  position: absolute;
+  right: 11px;
+  top: 6px;
+}
+.content .page_num span:first-child {
+  background-color: #0369b5;
+}
+.content .page_num span:first-child a:first-child {
+  color: #fff;
+}
+
+.returnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 20;
+}
+.returnTop .circle {
+  background-color: #0369b5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.returnTop .circle .arrow_up {
+  color: #fff;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}/*# sourceMappingURL=news.css.map */

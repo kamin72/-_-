@@ -1,0 +1,127 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.form_container {
+  margin: 50px 0;
+}
+.form_container .content::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: -1;
+}
+.form_container .content {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.form_container .content .introduction {
+  width: 60%;
+}
+.form_container .content .introduction .background {
+  position: relative;
+  z-index: -2;
+}
+.form_container .content .introduction .background img {
+  width: 100%;
+}
+.form_container .content .introduction .card_list {
+  width: 50%;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.form_container .content .introduction .card_list .card {
+  height: 250px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: bisque;
+  text-align: center;
+}
+.form_container .content .introduction .card_list .card h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.form_container .content .introduction .card_list .card .price {
+  font-size: 32px;
+  font-weight: bold;
+}
+.form_container .content .introduction .card_list .card button {
+  color: #333;
+}
+.form_container .content .introduction .card_list .card:nth-child(1) {
+  background-color: #0369b5;
+}
+.form_container .content .introduction .card_list .card:nth-child(1) button {
+  background-color: #2285c2;
+  border-radius: 5px;
+  padding: 2px;
+}
+.form_container .content .introduction .card_list .card:nth-child(2) {
+  background-color: #e89b04;
+}
+.form_container .content .introduction .card_list .card:nth-child(2) button {
+  background-color: #f3b53b;
+  border-radius: 5px;
+  padding: 2px;
+}
+.form_container .content .introduction .card_list .card:nth-child(3) {
+  background-color: #5cc60a;
+}
+.form_container .content .introduction .card_list .card:nth-child(3) button {
+  background-color: #71e914;
+  border-radius: 5px;
+  padding: 2px;
+}
+.form_container .content .form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form_container .content .form div {
+  display: flex;
+  align-items: center;
+}
+.form_container .content .form div label {
+  width: 100px;
+  flex-grow: 1;
+  margin-right: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 5px;
+}
+.form_container .content .form div select {
+  padding: 5px 0;
+  margin-right: 13px;
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  letter-spacing: 2px;
+}
+.form_container .content .form div input {
+  font-size: 16px;
+  letter-spacing: 5px;
+  padding: 0 5px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+}
+.form_container .content .form div #submit {
+  background-color: #0369b5;
+  padding: 5px 10px;
+}
+.form_container .content .form div #reset {
+  background-color: rgba(51, 51, 51, 0.1);
+  padding: 5px 10px;
+}/*# sourceMappingURL=reservation.css.map */

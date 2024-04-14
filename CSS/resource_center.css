@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.explore {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png), url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+}
+.explore .ex_container {
+  width: 1100px;
+  margin: auto;
+  padding: 50px 0;
+}
+.explore .ex_container .ex_header {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+.explore .ex_container .ex_header img {
+  width: 400px;
+  opacity: 0.5;
+}
+.explore .ex_container .ex_header h2 {
+  color: #0369b5;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 200px;
+}
+.explore .ex_container .article_list {
+  width: 1000px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  overflow: hidden;
+  padding-top: 50px;
+}
+.explore .ex_container .article_list .article {
+  width: 300px;
+}
+.explore .ex_container .article_list .article .pic {
+  width: 300px;
+}
+.explore .ex_container .article_list .article .pic img {
+  width: 100%;
+}
+.explore .ex_container .article_list .article .txt p {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 28px;
+  color: #333;
+  padding: 2px 0;
+}
+.explore .ex_container .icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.explore .ex_container .icon .arrow_left button {
+  background-color: #0369b5;
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.explore .ex_container .icon .arrow_left svg {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+}
+.explore .ex_container .icon .arrow_right button {
+  background-color: #0369b5;
+  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.explore .ex_container .icon .arrow_right button svg {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+
+.library {
+  background-image: url(../index_pic/燒瓶-removebg-preview.png), url(../index_pic/分子模型\ 5.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px;
+  background-size: 150px 250px, 300px 200px;
+}
+.library .li_container {
+  padding-top: 50px;
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+.library .li_container .li_header {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+.library .li_container .li_header img {
+  width: 400px;
+  opacity: 0.5;
+}
+.library .li_container .li_header h2 {
+  color: #0369b5;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 200px;
+}
+.library .li_container .books_list .row .col-12 .books,
+.library .li_container .books_list .row .col-md-6 .books,
+.library .li_container .books_list .row .col-xl-3 .books {
+  width: 235px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.library .li_container .books_list .row .col-12 .books .pic img,
+.library .li_container .books_list .row .col-md-6 .books .pic img,
+.library .li_container .books_list .row .col-xl-3 .books .pic img {
+  width: 100%;
+}
+.library .li_container .books_list .row .col-12 .books .txt,
+.library .li_container .books_list .row .col-md-6 .books .txt,
+.library .li_container .books_list .row .col-xl-3 .books .txt {
+  height: 100px;
+}
+.library .li_container .books_list .row .col-12 .books .txt p,
+.library .li_container .books_list .row .col-md-6 .books .txt p,
+.library .li_container .books_list .row .col-xl-3 .books .txt p {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 28px;
+  color: #333;
+  padding: 2px 0;
+}
+.library .li_container .books_icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.library .li_container .books_icon .books_txt a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #636581;
+  border-bottom: 1px solid #636581;
+}/*# sourceMappingURL=resource_center.css.map */
