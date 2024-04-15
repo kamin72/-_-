@@ -50,27 +50,37 @@ body {
 .form_container .content .introduction .card_list .card h3 {
   font-size: 20px;
   font-weight: bold;
+  color: #fff;
 }
 .form_container .content .introduction .card_list .card .price {
   font-size: 32px;
   font-weight: bold;
+  color: #fff;
 }
 .form_container .content .introduction .card_list .card button {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
   color: #333;
+  cursor: pointer;
 }
 .form_container .content .introduction .card_list .card:nth-child(1) {
   background-color: #0369b5;
 }
 .form_container .content .introduction .card_list .card:nth-child(1) button {
-  background-color: #2285c2;
+  background-color: #d9d9d9;
   border-radius: 5px;
   padding: 2px;
 }
 .form_container .content .introduction .card_list .card:nth-child(2) {
   background-color: #e89b04;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  top: -20px;
 }
 .form_container .content .introduction .card_list .card:nth-child(2) button {
-  background-color: #f3b53b;
+  background-color: #d9d9d9;
   border-radius: 5px;
   padding: 2px;
 }
@@ -78,7 +88,7 @@ body {
   background-color: #5cc60a;
 }
 .form_container .content .introduction .card_list .card:nth-child(3) button {
-  background-color: #71e914;
+  background-color: #d9d9d9;
   border-radius: 5px;
   padding: 2px;
 }
@@ -122,6 +132,6 @@ body {
   padding: 5px 10px;
 }
 .form_container .content .form div #reset {
-  background-color: rgba(51, 51, 51, 0.1);
+  background-color: #d9d9d9;
   padding: 5px 10px;
 }/*# sourceMappingURL=reservation.css.map */

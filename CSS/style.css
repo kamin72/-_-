@@ -8,8 +8,8 @@ section.banner .bn_container {
 }
 section.banner .bn_container .slogan {
   position: absolute;
-  top: 20px;
-  left: 80px;
+  top: 150px;
+  left: 150px;
   z-index: 2;
 }
 section.banner .bn_container .slogan p {
@@ -23,7 +23,7 @@ section.banner .bn_container .slide {
   width: 90%;
   aspect-ratio: 16/7;
   margin: auto;
-  box-shadow: 0px 10px 20px 5px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 5px 20px 5px rgba(51, 51, 51, 0.2);
   border-radius: 10px;
 }
 section.banner .bn_container .slide img {
@@ -247,6 +247,7 @@ section.course .cr_container .cr_content .topic_course .exper::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
+  cursor: pointer;
 }
 section.course .cr_container .cr_content .topic_course .camping {
   width: 260px;
@@ -271,6 +272,7 @@ section.course .cr_container .cr_content .topic_course .camping::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
+  cursor: pointer;
 }
 section.course .cr_container .cr_content .topic_course .competition {
   width: 260px;
@@ -295,6 +297,7 @@ section.course .cr_container .cr_content .topic_course .competition::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
+  cursor: pointer;
 }
 
 .feature_banner {
@@ -337,7 +340,7 @@ section.news .news_container .news_header h2 {
 }
 section.news .news_container .news_content {
   display: grid;
-  width: 1000px;
+  width: 1100px;
   margin: auto;
   margin-top: 50px;
   grid-template-areas: "Emc card1 DNA" "card2 card1 card3" "card2 flask card3";
@@ -383,16 +386,19 @@ section.news .news_container .news_content .card2 .txt h3 {
   font-weight: bold;
 }
 section.news .news_container .news_content .card2 .txt p {
+  color: #fff;
   padding: 10px 0;
   flex-grow: 1;
   line-height: 30px;
   overflow: hidden;
 }
 section.news .news_container .news_content .card2 .txt .readmore {
-  width: 100px;
-  background-color: #f3b53b;
+  box-shadow: 0 2px 2px 1px #333;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
-  border-color: #f3b53b;
+  background-color: #d9d9d9;
   border-radius: 5px;
   align-self: flex-end;
 }
@@ -424,15 +430,18 @@ section.news .news_container .news_content .card1 .txt h3 {
   font-weight: bold;
 }
 section.news .news_container .news_content .card1 .txt p {
+  color: #fff;
   padding: 10px 0;
   flex-grow: 1;
   line-height: 30px;
 }
 section.news .news_container .news_content .card1 .txt .readmore {
-  width: 100px;
-  background-color: #71e914;
+  box-shadow: 0 2px 2px 1px #333;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
-  border-color: #71e914;
+  background-color: #d9d9d9;
   border-radius: 5px;
   align-self: flex-end;
 }
@@ -480,15 +489,18 @@ section.news .news_container .news_content .card3 .txt h3 {
   font-weight: bold;
 }
 section.news .news_container .news_content .card3 .txt p {
+  color: #fff;
   padding: 10px 0;
   line-height: 30px;
   flex-grow: 1;
 }
 section.news .news_container .news_content .card3 .txt .readmore {
-  width: 100px;
-  background-color: #81e3fb;
+  box-shadow: 0 1px 2px 1px #333;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
   cursor: pointer;
-  border-color: #81e3fb;
+  background-color: #d9d9d9;
   border-radius: 5px;
   align-self: flex-end;
 }
