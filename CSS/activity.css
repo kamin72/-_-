@@ -101,7 +101,6 @@ body {
 }
 .course_overview .co_container button {
   font-size: 20px;
-  color: #fff;
   background-color: #5cc60a;
   padding: 10px 10px;
   border-radius: 5px;
@@ -111,4 +110,8 @@ body {
   bottom: 0;
   left: 45%;
   cursor: pointer;
+}
+.course_overview .co_container button a {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=activity.css.map */
