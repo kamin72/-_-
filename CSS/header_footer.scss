@@ -31,7 +31,7 @@ header.main {
       .search_area {
         display: flex;
         align-items: center;
-        border: 2px solid #636581;
+        border: 2px solid #e89b04;
         border-radius: 10px;
         margin-left: 20px;
         input {
@@ -39,10 +39,12 @@ header.main {
           border: none;
           outline: none;
           margin-left: 10px;
+          padding: 5px;
+          letter-spacing: 1px;
         }
         .icon {
           font-size: 20px;
-          color: #636581;
+          color: #e89b04;
           cursor: pointer;
         }
       }

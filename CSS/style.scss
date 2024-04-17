@@ -8,8 +8,8 @@ section.banner {
     position: relative;
     .slogan {
       position: absolute;
-      top: 150px;
-      left: 150px;
+      top: 50px;
+      left: 100px;
       z-index: 2;
       p {
         font-size: 50px;
@@ -17,48 +17,38 @@ section.banner {
         font-weight: bold;
         line-height: 90px;
         color: #333;
+        text-shadow: 2px 2px 10px #fff;
       }
     }
     .slide {
-      width: 90%;
+      width: 100%;
       aspect-ratio: 16/7;
       margin: auto;
       box-shadow: 0px 5px 20px 5px rgb(51, 51, 51, 0.2);
-      border-radius: 10px;
       img {
         width: 100%;
         height: 100%;
-        border-radius: 10px;
       }
     }
   }
 }
 section.feature {
   background-image: url(../index_pic/燒瓶-removebg-preview.png),
-    url(../index_pic/分子模型\ 5.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 0 top 0, right 0 bottom -20px;
-  background-size: 150px 250px, 300px 200px;
+    url(../index_pic/分子模型\ 5.png), url(../index_pic/Feature.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
+  background-size: 150px 250px, 300px 200px, 600px 100px;
   .ft_container {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 50px;
     .ft_header {
-      display: flex;
-      align-items: center;
       padding: 0 50px;
-      img {
-        width: 400px;
-        opacity: 0.5;
-      }
       h2 {
         color: #0369b5;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 1px;
-        flex-grow: 1;
         text-align: center;
-        margin-right: 200px;
       }
     }
     .ft_content {
@@ -150,34 +140,27 @@ section.feature {
 }
 section.course {
   background-image: url(../index_pic/燒瓶-removebg-preview.png),
-    url(../index_pic/分子模型\ 5.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 0 top 0, right 0 bottom -20px;
-  background-size: 150px 250px, 300px 200px;
+    url(../index_pic/分子模型\ 5.png), url(../index_pic/Class.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
+  background-size: 150px 250px, 300px 200px, 600px 100px;
   .cr_container {
     width: 100%;
-    padding: 50px 0;
+    padding-top: 100px;
     .cr_header {
-      display: flex;
-      align-items: center;
       padding: 0 50px;
-      img {
-        width: 400px;
-        opacity: 0.5;
-      }
       h2 {
         color: #0369b5;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 1px;
-        flex-grow: 1;
         text-align: center;
-        margin-right: 200px;
       }
     }
     .cr_content {
       width: 80%;
-      margin: auto;
+      margin: 0 auto;
+      margin-top: 50px;
       .left_pic {
         width: 300px;
         height: 200px;
@@ -188,10 +171,10 @@ section.course {
         }
       }
       .txt {
-        width: 700px;
+        width: 500px;
         margin: auto;
         position: relative;
-        bottom: 120px;
+        bottom: 180px;
         left: 100px;
         letter-spacing: 1px;
         line-height: 40px;
@@ -199,6 +182,7 @@ section.course {
         h3 {
           color: #e89b04;
           font-size: 20px;
+          font-weight: bold;
         }
         p {
           color: #636581;
@@ -221,12 +205,25 @@ section.course {
         display: flex;
         justify-content: space-evenly;
         position: relative;
-        bottom: 80px;
+        bottom: 140px;
         z-index: 1;
         .exper {
           width: 260px;
           height: 190px;
           position: relative;
+          &:hover {
+            .mask {
+              display: block;
+              position: absolute;
+            }
+          }
+          .mask {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(51, 51, 51, 0.5);
+            display: none;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -238,9 +235,7 @@ section.course {
           display: block;
           font-weight: bold;
           font-family: "Noto Sans TC", sans-serif;
-          background-color: #fff;
           color: #0369b5;
-          border-radius: 5px;
           padding: 3px;
           position: absolute;
           top: 50%;
@@ -248,10 +243,30 @@ section.course {
           transform: translate(-50%, 0);
           cursor: pointer;
         }
+        .exper:hover::after {
+          content: "主題實驗";
+          display: block;
+          border-bottom: 1px solid #fff;
+          color: #fff;
+        }
+
         .camping {
           width: 260px;
           height: 190px;
           position: relative;
+          &:hover {
+            .mask {
+              display: block;
+              position: absolute;
+            }
+          }
+          .mask {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(51, 51, 51, 0.5);
+            display: none;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -263,9 +278,7 @@ section.course {
           display: block;
           font-weight: bold;
           font-family: "Noto Sans TC", sans-serif;
-          background-color: #fff;
           color: #0369b5;
-          border-radius: 5px;
           padding: 3px;
           position: absolute;
           top: 50%;
@@ -273,10 +286,29 @@ section.course {
           transform: translate(-50%, 0);
           cursor: pointer;
         }
+        .camping:hover::after {
+          content: "科學體驗";
+          display: block;
+          border-bottom: 1px solid #fff;
+          color: #fff;
+        }
         .competition {
           width: 260px;
           height: 190px;
           position: relative;
+          &:hover {
+            .mask {
+              display: block;
+              position: absolute;
+            }
+          }
+          .mask {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(51, 51, 51, 0.5);
+            display: none;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -288,9 +320,7 @@ section.course {
           display: block;
           font-weight: bold;
           font-family: "Noto Sans TC", sans-serif;
-          background-color: #fff;
           color: #0369b5;
-          border-radius: 5px;
           padding: 3px;
           position: absolute;
           top: 50%;
@@ -298,13 +328,19 @@ section.course {
           transform: translate(-50%, 0);
           cursor: pointer;
         }
+        .competition:hover::after {
+          content: "專題競賽";
+          display: block;
+          border-bottom: 1px solid #fff;
+          color: #fff;
+        }
       }
     }
   }
 }
 .feature_banner {
   width: 100%;
-  height: 100px;
+  margin: 50px 0;
   img {
     width: 100%;
     height: 100%;
@@ -312,30 +348,22 @@ section.course {
 }
 section.news {
   background-image: url(../index_pic/燒瓶-removebg-preview.png),
-    url(../index_pic/分子模型\ 5.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 0 top 0, right 0 bottom -20px;
-  background-size: 150px 250px, 300px 200px;
+    url(../index_pic/分子模型\ 5.png), url(../index_pic/Latest\ News.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
+  background-size: 150px 250px, 300px 200px, 400px 100px;
   .news_container {
     width: 100%;
-    padding: 50px 0;
+    padding: 100px 0;
     margin: auto;
     .news_header {
-      display: flex;
-      align-items: center;
       padding: 0 50px;
-      img {
-        width: 400px;
-        opacity: 0.5;
-      }
       h2 {
         color: #0369b5;
         font-size: 32px;
         font-weight: bold;
         letter-spacing: 1px;
-        flex-grow: 1;
         text-align: center;
-        margin-right: 200px;
       }
     }
     .news_content {
@@ -392,15 +420,50 @@ section.news {
             line-height: 30px;
             overflow: hidden;
           }
-          .readmore {
-            box-shadow: 0 2px 2px 1px #333;
-            border: none;
-            font-size: 16px;
-            padding: 5px 10px;
+          .btn {
+            color: #fff;
             cursor: pointer;
-            background-color: #d9d9d9;
-            border-radius: 5px;
             align-self: flex-end;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            margin: 2px 0;
+            padding: 0 3px;
+            max-width: 160px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+          .btn-1 {
+            font-weight: 100;
+
+            svg {
+              height: 40px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+
+            rect {
+              fill: none;
+              stroke: #fff;
+              stroke-width: 2;
+              stroke-dasharray: 422, 0;
+              transition: all 0.35s linear;
+            }
+          }
+
+          .btn-1:hover {
+            font-weight: 900;
+            letter-spacing: 1px;
+
+            rect {
+              stroke-width: 5;
+              stroke-dasharray: 60, 90;
+              stroke-dashoffset: 48;
+              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            }
           }
         }
       }
@@ -436,15 +499,49 @@ section.news {
             flex-grow: 1;
             line-height: 30px;
           }
-          .readmore {
-            box-shadow: 0 2px 2px 1px #333;
-            border: none;
-            font-size: 16px;
-            padding: 5px 10px;
+          .btn {
+            color: #fff;
             cursor: pointer;
-            background-color: #d9d9d9;
-            border-radius: 5px;
             align-self: flex-end;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            margin: 2px 0;
+            padding: 0 3px;
+            max-width: 160px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+          .btn-1 {
+            font-weight: 100;
+
+            svg {
+              height: 40px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+
+            rect {
+              fill: none;
+              stroke: #fff;
+              stroke-width: 2;
+              stroke-dasharray: 422, 0;
+              transition: all 0.35s linear;
+            }
+          }
+          .btn-1:hover {
+            font-weight: 900;
+            letter-spacing: 1px;
+
+            rect {
+              stroke-width: 5;
+              stroke-dasharray: 60, 90;
+              stroke-dashoffset: 48;
+              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            }
           }
         }
       }
@@ -495,15 +592,48 @@ section.news {
             line-height: 30px;
             flex-grow: 1;
           }
-          .readmore {
-            box-shadow: 0 1px 2px 1px #333;
-            border: none;
-            font-size: 16px;
-            padding: 5px 10px;
+          .btn {
+            color: #fff;
             cursor: pointer;
-            background-color: #d9d9d9;
-            border-radius: 5px;
             align-self: flex-end;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 40px;
+            margin: 2px 0;
+            padding: 0 3px;
+            max-width: 160px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+          .btn-1 {
+            font-weight: 100;
+            svg {
+              height: 40px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            }
+
+            rect {
+              fill: none;
+              stroke: #fff;
+              stroke-width: 2;
+              stroke-dasharray: 422, 0;
+              transition: all 0.35s linear;
+            }
+          }
+          .btn-1:hover {
+            font-weight: 900;
+            letter-spacing: 1px;
+
+            rect {
+              stroke-width: 5;
+              stroke-dasharray: 60, 90;
+              stroke-dashoffset: 48;
+              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            }
           }
         }
       }
