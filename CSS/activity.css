@@ -4,24 +4,24 @@ body {
 }
 
 .course_overview {
-  background-image: url(../index_pic/燒瓶-removebg-preview.png), url(../index_pic/分子模型\ 5.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 0 top 0, right 0 bottom -20px;
-  background-size: 150px 250px, 300px 200px;
+  background-image: url(../index_pic/燒瓶-removebg-preview.png), url(../index_pic/分子模型\ 5.png), url(../activity_pic/Class.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
+  background-size: 150px 250px, 300px 200px, 600px 100px;
 }
 .course_overview .co_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  margin: 50px 0;
+  padding: 50px 0;
+  width: 90%;
+  margin: auto;
 }
 .course_overview .co_container .co_header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-}
-.course_overview .co_container .co_header img {
-  width: 400px;
-  opacity: 0.5;
+  padding: 50px 50px;
 }
 .course_overview .co_container .co_header h2 {
   color: #0369b5;
@@ -29,6 +29,8 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
+  flex-grow: 10;
+  margin-left: 200px;
 }
 .course_overview .co_container .co_header .filter {
   display: flex;
@@ -58,11 +60,8 @@ body {
 .course_overview .co_container .co_header .filter .sort_by select {
   flex-grow: 1;
 }
-.course_overview .co_container .content {
-  padding: 20px;
-}
 .course_overview .co_container .content .container {
-  width: 1100px;
+  width: 100%;
 }
 .course_overview .co_container .content .container .row .col-12 .card,
 .course_overview .co_container .content .container .row .col-xl-6 .card {
@@ -99,19 +98,70 @@ body {
   line-height: 32px;
   color: #333;
 }
-.course_overview .co_container button {
-  font-size: 20px;
-  background-color: #0369b5;
-  padding: 10px 10px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 2px 2px #333;
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  cursor: pointer;
+.course_overview .co_container .immediately {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.course_overview .co_container button a {
-  text-decoration: none;
+.course_overview .co_container .immediately a {
+  background: #0369b5;
+  border-bottom: 1px solid;
+  border-radius: 10px;
   color: #fff;
+  line-height: 1.4;
+  padding: 0.25em;
+  text-decoration: none;
+  text-align: center;
+}
+.course_overview .co_container .immediately a:hover {
+  background: #0369b5;
+  color: #fff;
+}
+.course_overview .co_container .immediately .btn {
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.course_overview .co_container .immediately .btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(3, 105, 181, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.course_overview .co_container .immediately .btn-5:hover {
+  border: 0px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(3, 105, 181, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.returnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 20;
+}
+.returnTop .circle {
+  background-color: #0369b5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.returnTop .circle .arrow_up {
+  color: #fff;
+  position: relative;
+  left: 10px;
+  top: 10px;
 }/*# sourceMappingURL=activity.css.map */
