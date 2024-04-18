@@ -49,24 +49,23 @@ section.banner .banner_container .pic img {
 }
 
 section.introduction .in_container {
-  width: 1100px;
+  width: 100%;
   margin: auto;
   padding: 50px 0;
 }
 section.introduction .in_container .card {
   width: 100%;
   padding: 20px 0;
+  gap: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 section.introduction .in_container .card .pic {
   width: 300px;
-  height: 200px;
 }
 section.introduction .in_container .card .pic img {
   width: 100%;
-  height: 100%;
   border-radius: 10px;
 }
 section.introduction .in_container .card .txt {
