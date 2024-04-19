@@ -97,6 +97,10 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 32px;
   color: #333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 }
 .course_overview .co_container .immediately {
   display: flex;

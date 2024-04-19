@@ -415,9 +415,12 @@ section.news {
           }
           p {
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             flex-grow: 1;
             line-height: 30px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
             overflow: hidden;
           }
           .btn {
@@ -495,9 +498,13 @@ section.news {
           }
           p {
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             flex-grow: 1;
             line-height: 30px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
           }
           .btn {
             color: #fff;
@@ -588,9 +595,13 @@ section.news {
           }
           p {
             color: #fff;
-            padding: 10px 0;
-            line-height: 30px;
+            padding: 20px 0;
             flex-grow: 1;
+            line-height: 30px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
           }
           .btn {
             color: #fff;
