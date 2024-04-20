@@ -4,7 +4,7 @@ body {
 
 .sort {
   text-align: center;
-  padding: 50px 0 20px;
+  margin: 50px 0 20px;
 }
 .sort a {
   background: #0369b5;
@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-  margin: 20px 0 50px;
+  margin: 20px 0 20px;
 }
 .content .container {
   width: 80%;
