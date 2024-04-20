@@ -2,52 +2,61 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 .sort {
-  width: 100px;
   text-align: center;
-  .main_list {
-    background-color: #0369b5;
-    li {
-      padding: 10px;
-      position: relative;
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
-      .sub_list {
-        display: none;
-        background-color: #fff;
-        width: 100px;
-        position: absolute;
-        left: 0;
-        top: 35px;
-        li {
-          border-bottom: 2px solid #0369b5;
-          a {
-            color: #333;
-          }
-        }
-      }
-      .sub_list {
-        li:hover {
-          background-color: #0369b5;
-          a {
-            color: #fff;
-          }
-        }
-      }
+  padding: 50px 0 20px;
+  a {
+    background: #0369b5;
+    border-bottom: 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.4;
+    padding: 0.25em;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      background: #0369b5;
+      color: #fff;
     }
   }
-  li:hover {
-    .sub_list {
-      display: block;
-    }
+  .btn {
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0 40px;
+    padding: 10px 20px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .btn-5 {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgb(3, 105, 181, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .btn-5:hover {
+    border: 0px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+      0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgb(3, 105, 181, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
   }
 }
+
 .content {
-  padding-top: 50px;
-  padding-bottom: 30px;
+  margin: 20px 0 50px;
   .container {
-    width: 1100px;
+    width: 80%;
     .row {
       .col-12,
       .col-md-6,
@@ -58,13 +67,12 @@ body {
           display: flex;
           flex-direction: column;
           .pic {
-            display: flex;
-            flex-direction: column;
             height: 200px;
             img {
               width: 100%;
               height: 100%;
               border-radius: 10px 10px 0 0;
+              object-fit: cover;
             }
           }
           .txt {
@@ -72,18 +80,18 @@ body {
             height: 180px;
             display: flex;
             flex-direction: column;
-            flex-grow: 1;
             background-color: #fff;
             border-radius: 0 0 10px 10px;
             h3 {
               font-size: 20px;
               font-weight: bold;
-              padding: 2px;
+              padding: 5px 0;
               margin-bottom: 20px;
               color: #333;
+              flex-grow: 1;
             }
             .date {
-              color: #6d6d6d;
+              color: #333;
               padding: 3px 0;
             }
             p {
@@ -91,6 +99,10 @@ body {
               line-height: 28px;
               overflow: hidden;
               color: #fff;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+              overflow: hidden;
             }
           }
         }

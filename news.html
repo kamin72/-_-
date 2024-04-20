@@ -48,22 +48,15 @@
       </div>
     </header>
     <div class="sort">
-      <ul class="main_list">
-        <li>
-          <a href="">最新消息</a>
-          <ul class="sub_list">
-            <li><a href="">公告</a></li>
-            <li><a href="">活動</a></li>
-            <li><a href="">News</a></li>
-          </ul>
-        </li>
-      </ul>
+      <a class="btn btn-5" id="publication"><span>公告</span></a>
+      <a class="btn btn-5" id="activity"><span>活動</span></a>
+      <a class="btn btn-5" id="latest"><span>news</span></a>
     </div>
     <div class="content">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card pub">
               <div class="pic">
                 <img
                   src="./news_pic/will-francis-ZDNyhmgkZlQ-unsplash (1).jpg" />
@@ -79,7 +72,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card pub">
               <div class="pic">
                 <img
                   src="./news_pic/patrick-tomasso-Oaqk7qqNh_c-unsplash (1).jpg" />
@@ -95,7 +88,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card pub">
               <div class="pic">
                 <img src="./news_pic/learn-6529982_640.jpg" />
               </div>
@@ -109,7 +102,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card act">
               <div class="pic">
                 <img
                   src="./news_pic/matthew-guay-Q7wDdmgCBFg-unsplash (1).jpg" />
@@ -124,7 +117,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card act">
               <div class="pic">
                 <img src="./news_pic/boy-1822631_640.jpg" />
               </div>
@@ -139,7 +132,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card act">
               <div class="pic">
                 <img src="./news_pic/xr-7499160_640.jpg" />
               </div>
@@ -156,7 +149,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card news">
               <div class="pic">
                 <img src="./news_pic/owen-beard-DK8jXx1B-1c-unsplash (1).jpg" />
               </div>
@@ -170,7 +163,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card news">
               <div class="pic">
                 <img src="./news_pic/teach-1968076_640.jpg" />
               </div>
@@ -184,7 +177,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-xl-4">
-            <div class="card">
+            <div class="card news">
               <div class="pic">
                 <img src="./news_pic/12238306823_0e62619f32_c.jpg" />
               </div>
@@ -311,5 +304,56 @@
         >
       </div>
     </footer>
+
+    <script>
+      //公告按鈕
+      function sortPub() {
+        var publications = document.getElementsByClassName("pub");
+        var activities = document.getElementsByClassName("act");
+        var news = document.getElementsByClassName("news");
+        for (var i = 0; i <= publications.length - 1; i++) {
+          publications[i].style.display = "block";
+        }
+        for (var i = 0; i <= activities.length - 1; i++) {
+          activities[i].style.display = "none";
+        }
+        for (var i = 0; i <= news.length - 1; i++) {
+          news[i].style.display = "none";
+        }
+      }
+      document.getElementById("publication").onclick = sortPub;
+      //活動按鈕
+      function sortAct() {
+        var publications = document.getElementsByClassName("pub");
+        var activities = document.getElementsByClassName("act");
+        var news = document.getElementsByClassName("news");
+        for (var i = 0; i <= publications.length - 1; i++) {
+          publications[i].style.display = "none";
+        }
+        for (var i = 0; i <= activities.length - 1; i++) {
+          activities[i].style.display = "block";
+        }
+        for (var i = 0; i <= news.length - 1; i++) {
+          news[i].style.display = "none";
+        }
+      }
+      document.getElementById("activity").onclick = sortAct;
+      //news按鈕
+      function sortNew() {
+        var publications = document.getElementsByClassName("pub");
+        var activities = document.getElementsByClassName("act");
+        var news = document.getElementsByClassName("news");
+        for (var i = 0; i <= publications.length - 1; i++) {
+          publications[i].style.display = "none";
+        }
+        for (var i = 0; i <= activities.length - 1; i++) {
+          activities[i].style.display = "none";
+        }
+        for (var i = 0; i <= news.length - 1; i++) {
+          news[i].style.display = "block";
+        }
+      }
+      document.getElementById("latest").onclick = sortNew;
+    </script>
   </body>
 </html>
