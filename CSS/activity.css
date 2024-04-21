@@ -69,13 +69,11 @@ body {
 }
 .course_overview .co_container .content .container .row .col-12 .card .pic,
 .course_overview .co_container .content .container .row .col-xl-6 .card .pic {
-  width: 250px;
-  height: 200px;
+  width: 50%;
 }
 .course_overview .co_container .content .container .row .col-12 .card .pic img,
 .course_overview .co_container .content .container .row .col-xl-6 .card .pic img {
   width: 100%;
-  height: 100%;
   border-radius: 10px;
 }
 .course_overview .co_container .content .container .row .col-12 .card .txt,

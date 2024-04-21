@@ -154,3 +154,21 @@ body {
     }
   }
 }
+.returnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 20;
+  .circle {
+    background-color: #0369b5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    .arrow_up {
+      color: #fff;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+  }
+}

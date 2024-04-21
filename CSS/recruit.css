@@ -10,7 +10,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   z-index: -1;
 }
 .recruit_container .recruit_banner {
@@ -18,7 +18,7 @@ body {
 }
 .recruit_container .recruit_banner .txt {
   position: absolute;
-  bottom: 50%;
+  top: 25%;
   right: 50%;
   transform: translate(50%, 0);
   z-index: 1;
@@ -44,7 +44,6 @@ body {
 }
 .recruit_container .recruit_banner .pic img {
   width: 100%;
-  height: 80vh;
 }
 .recruit_container .recruit_content {
   margin: 40px 0;

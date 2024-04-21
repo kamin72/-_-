@@ -3,7 +3,13 @@ body {
 }
 
 .form_container {
-  margin: 50px 0;
+  width: 1200px;
+  margin: auto;
+}
+@media screen and (max-width: 1199px) {
+  .form_container {
+    width: 900px;
+  }
 }
 .form_container .content::after {
   content: "";
@@ -15,28 +21,26 @@ body {
   z-index: -1;
 }
 .form_container .content {
+  margin: 50px 0;
   width: 100%;
+  height: 80vh;
   position: relative;
   display: flex;
 }
 .form_container .content .introduction {
   width: 60%;
+  background-image: url(../reservation_pic/Rectangle\ 102.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.form_container .content .introduction .background {
-  position: relative;
-  z-index: -2;
-}
-.form_container .content .introduction .background img {
-  width: 100%;
-}
-.form_container .content .introduction .card_list {
+.form_container .content .card_list {
   width: 50%;
   display: flex;
   position: absolute;
   top: 30%;
   left: 5%;
 }
-.form_container .content .introduction .card_list .card {
+.form_container .content .card_list .card {
   width: 25%;
   height: 250px;
   display: flex;
@@ -47,17 +51,17 @@ body {
   flex-grow: 1;
   text-align: center;
 }
-.form_container .content .introduction .card_list .card h3 {
+.form_container .content .card_list .card h3 {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
-.form_container .content .introduction .card_list .card .price {
+.form_container .content .card_list .card .price {
   font-size: 32px;
   font-weight: bold;
   color: #fff;
 }
-.form_container .content .introduction .card_list .card .btn {
+.form_container .content .card_list .card .btn {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -69,65 +73,65 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.form_container .content .introduction .card_list .card .btn-1 {
+.form_container .content .card_list .card .btn-1 {
   font-weight: 100;
 }
-.form_container .content .introduction .card_list .card .btn-1 svg {
+.form_container .content .card_list .card .btn-1 svg {
   height: 40px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
-.form_container .content .introduction .card_list .card .btn-1 rect {
+.form_container .content .card_list .card .btn-1 rect {
   fill: none;
   stroke: #fff;
   stroke-width: 2;
   stroke-dasharray: 422, 0;
   transition: all 0.35s linear;
 }
-.form_container .content .introduction .card_list .card .btn-1:hover {
+.form_container .content .card_list .card .btn-1:hover {
   font-weight: 900;
   letter-spacing: 1px;
 }
-.form_container .content .introduction .card_list .card .btn-1:hover rect {
+.form_container .content .card_list .card .btn-1:hover rect {
   stroke-width: 5;
   stroke-dasharray: 60, 90;
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.form_container .content .introduction .card_list .card:nth-child(1) {
+.form_container .content .card_list .card:nth-child(1) {
   background-color: #0369b5;
 }
-.form_container .content .introduction .card_list .card:nth-child(2) {
+.form_container .content .card_list .card:nth-child(2) {
   background-color: #e89b04;
   height: 300px;
   width: 200px;
   position: relative;
   top: -20px;
 }
-.form_container .content .introduction .card_list .card:nth-child(3) {
+.form_container .content .card_list .card:nth-child(3) {
   background-color: #5cc60a;
 }
-.form_container .content .form {
+.form_container .form {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.form_container .content .form div {
+.form_container .form div {
   display: flex;
   align-items: center;
 }
-.form_container .content .form div label {
+.form_container .form div label {
   width: 100px;
   flex-grow: 1;
   margin-right: 20px;
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 5px;
 }
-.form_container .content .form div select {
+.form_container .form div select {
   padding: 5px 0;
   margin-right: 13px;
   border-radius: 5px;
@@ -135,7 +139,7 @@ body {
   color: #333;
   letter-spacing: 2px;
 }
-.form_container .content .form div input {
+.form_container .form div input {
   font-size: 16px;
   letter-spacing: 2px;
   padding: 5px 5px;
@@ -145,7 +149,7 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   color: #333;
 }
-.form_container .content .form div a {
+.form_container .form div a {
   background: #0369b5;
   border-bottom: 1px solid;
   border-radius: 10px;
@@ -155,11 +159,11 @@ body {
   text-decoration: none;
   text-align: center;
 }
-.form_container .content .form div a:hover {
+.form_container .form div a:hover {
   background: #0369b5;
   color: #fff;
 }
-.form_container .content .form div .btn {
+.form_container .form div .btn {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -172,7 +176,7 @@ body {
   text-transform: uppercase;
   width: 100%;
 }
-.form_container .content .form div .btn-5 {
+.form_container .form div .btn-5 {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(3, 105, 181, 0.5);
@@ -180,13 +184,13 @@ body {
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-.form_container .content .form div .btn-5:hover {
+.form_container .form div .btn-5:hover {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(3, 105, 181, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
 }
-.form_container .content .form div #reset {
+.form_container .form div #reset {
   color: #333;
   cursor: pointer;
   font-size: 16px;

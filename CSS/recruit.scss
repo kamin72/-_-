@@ -10,14 +10,14 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     z-index: -1;
   }
   .recruit_banner {
     position: relative;
     .txt {
       position: absolute;
-      bottom: 50%;
+      top: 25%;
       right: 50%;
       transform: translate(50%, 0);
       z-index: 1;
@@ -42,7 +42,7 @@ body {
       z-index: -2;
       img {
         width: 100%;
-        height: 80vh;
+        // height: 80vh;
       }
     }
   }

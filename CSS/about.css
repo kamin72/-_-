@@ -23,13 +23,18 @@ section.banner .banner_container .txt {
   bottom: 0;
   right: 0;
   z-index: 2;
+  margin-bottom: 70px;
   text-align: right;
   line-height: 60px;
 }
 section.banner .banner_container .txt p {
-  font-size: 28px;
+  font-size: 32px;
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
+}
+section.banner .banner_container .txt p span {
+  padding: 0 5px;
+  text-shadow: 2px 2px #333;
 }
 section.banner .banner_container .txt p span:first-child {
   color: #e89b04;

@@ -144,4 +144,23 @@ body {
   font-weight: bold;
   color: #636581;
   border-bottom: 1px solid #636581;
+}
+
+.returnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 20;
+}
+.returnTop .circle {
+  background-color: #0369b5;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.returnTop .circle .arrow_up {
+  color: #fff;
+  position: relative;
+  left: 10px;
+  top: 10px;
 }/*# sourceMappingURL=resource_center.css.map */
