@@ -11,11 +11,13 @@ header.main .hd_container {
   box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
 }
+header.main .hd_container .logo {
+  flex-grow: 1;
+}
 header.main .hd_container .logo img {
   width: 100px;
 }
 header.main .hd_container nav {
-  margin-right: 0px;
   display: flex;
   align-items: center;
   letter-spacing: 1px;
@@ -51,7 +53,41 @@ header.main .hd_container nav .search_area .icon {
   color: #e89b04;
   cursor: pointer;
 }
+header.main .hd_container .bars .fa-bars {
+  font-size: 20px;
+  color: #e89b04;
+  cursor: pointer;
+}
 
+@media screen and (min-width: 768px) {
+  .bars .fa-bars {
+    display: none;
+    width: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header.main .hd_container .logo {
+    margin: auto;
+    order: 2;
+    flex-grow: 0;
+  }
+  header.main .hd_container nav {
+    order: 1;
+  }
+  header.main .hd_container nav ul {
+    display: block;
+    position: absolute;
+  }
+  header.main .hd_container nav .search_area {
+    border: none;
+  }
+  header.main .hd_container nav .search_area input {
+    display: none;
+  }
+  header.main .hd_container .bars {
+    order: 3;
+  }
+}
 footer.main .footer_container {
   background-color: #0369b5;
 }
