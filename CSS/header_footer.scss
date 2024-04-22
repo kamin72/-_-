@@ -30,25 +30,25 @@ header.main {
           }
         }
       }
-      .search_area {
-        display: flex;
-        align-items: center;
-        border: 2px solid #e89b04;
-        border-radius: 10px;
-        margin-left: 20px;
-        input {
-          width: 80px;
-          border: none;
-          outline: none;
-          margin-left: 10px;
-          padding: 5px;
-          letter-spacing: 1px;
-        }
-        .icon {
-          font-size: 20px;
-          color: #e89b04;
-          cursor: pointer;
-        }
+    }
+    .search_area {
+      display: flex;
+      align-items: center;
+      border: 2px solid #e89b04;
+      border-radius: 10px;
+      margin-left: 20px;
+      input {
+        width: 80px;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        padding: 5px;
+        letter-spacing: 1px;
+      }
+      .icon {
+        font-size: 20px;
+        color: #e89b04;
+        cursor: pointer;
       }
     }
     .bars {
@@ -71,22 +71,33 @@ header.main {
 @media screen and (max-width: 767px) {
   header.main {
     .hd_container {
+      position: relative;
       .logo {
         margin: auto;
         order: 2;
         flex-grow: 0;
       }
       nav {
-        order: 1;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        text-align: center;
+        background-color: #fff;
         ul {
           display: block;
-          position: absolute;
-        }
-        .search_area {
-          border: none;
-          input {
-            display: none;
+          li {
+            padding: 10px 0 10px 30px;
+            text-align: center;
           }
+        }
+      }
+      .search_area {
+        order: 1;
+        border: none;
+        input {
+          display: none;
         }
       }
       .bars {
