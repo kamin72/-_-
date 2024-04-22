@@ -1,3 +1,4 @@
+//....banner輪播
 window.onload = function carousel() {
   let slides = document.getElementsByClassName("carousel-item");
   //將要播放的slide加上"active"的標記
@@ -32,7 +33,7 @@ function textSwitch_capming() {
     "科學體驗是通往科學殿堂的門鑰匙，是激發孩子探索求知慾的火種。透過親身體驗、動手操作，孩子們可以深入觀察、思考、分析，從而獲得寶貴的科學知識和技能。";
 }
 document.getElementById("camping").onclick = textSwitch_capming;
-
+//....課程體驗
 function textSwitch_exper() {
   var para = document.getElementById("paragraph");
   para.innerText =
@@ -46,3 +47,28 @@ function textSwitch_competition() {
     "科學專題競賽是青少年展現科學素養、激發創新潛能的重要平台。在競賽中，學生們將自主選擇研究課題，進行深入探究，並將研究成果以論文、演示、展板等形式呈現。";
 }
 document.getElementById("competition").onclick = textSwitch_competition;
+//....最新消息
+let prev = document.getElementById("prev"),
+  next = document.getElementById("next"),
+  cards = document.getElementsByClassName("active");
+let cardWidth;
+
+function resize() {
+  cardWidth = document.getElementById("cardWidth").offsetWidth;
+}
+resize();
+window.addEventListener("resize", resize);
+
+function nextCards() {
+  for (i = 0; i <= cards.length - 1; i++) {
+    cards[i].scrollLeft += cardWidth;
+  }
+}
+next.onclick = nextCards;
+
+function previousCards() {
+  for (i = 0; i <= cards.length - 1; i++) {
+    cards[i].scrollLeft -= cardWidth;
+  }
+}
+prev.onclick = previousCards;

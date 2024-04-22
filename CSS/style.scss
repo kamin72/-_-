@@ -558,10 +558,17 @@ section.news {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
   background-size: 150px 250px, 300px 200px, 400px 100px;
+  @media screen and (max-width: 767px) {
+    background-size: 150px 250px, 300px 200px, 300px 100px;
+  }
   .news_container {
     width: 1200px;
     padding: 100px 0;
     margin: auto;
+    @media screen and (max-width: 767px) {
+      width: 500px;
+      position: relative;
+    }
     .news_header {
       padding: 0 50px;
       h2 {
@@ -574,7 +581,7 @@ section.news {
     }
     .news_content {
       display: grid;
-      max-width: 80%;
+      width: 80%;
       margin: auto;
       margin-top: 50px;
       grid-template-areas:
@@ -585,9 +592,24 @@ section.news {
       grid-template-rows: 1fr;
       gap: 10px;
       color: #333;
+      @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: flex-start;
+        width: 60%;
+        overflow: hidden;
+        gap: 0px;
+        scroll-snap-type: x mandatory;
+        .active {
+          scroll-snap-align: start;
+        }
+      }
       .Emc {
         grid-area: Emc;
         display: flex;
+        @media screen and (max-width: 767px) {
+          display: none;
+          grid-area: none;
+        }
         img {
           width: 100%;
           border-radius: 10px;
@@ -597,10 +619,18 @@ section.news {
         grid-area: card2;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 767px) {
+          grid-area: none;
+          width: 100%;
+          height: 400px;
+        }
         .pic {
           display: flex;
           width: 100%;
           height: 200px;
+          @media screen and (max-width: 767px) {
+            width: 300px;
+          }
           img {
             width: 100%;
             border-radius: 10px 10px 0 0;
@@ -629,6 +659,10 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 767px) {
+              padding: 20px 0 20px;
+              line-height: 35px;
+            }
           }
           .btn {
             color: #fff;
@@ -646,7 +680,6 @@ section.news {
           }
           .btn-1 {
             font-weight: 100;
-
             svg {
               height: 40px;
               left: 0;
@@ -654,7 +687,6 @@ section.news {
               top: 0;
               width: 100%;
             }
-
             rect {
               fill: none;
               stroke: #fff;
@@ -663,11 +695,9 @@ section.news {
               transition: all 0.35s linear;
             }
           }
-
           .btn-1:hover {
             font-weight: 900;
             letter-spacing: 1px;
-
             rect {
               stroke-width: 5;
               stroke-dasharray: 60, 90;
@@ -677,15 +707,22 @@ section.news {
           }
         }
       }
-
       .card1 {
         grid-area: card1;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 767px) {
+          height: 400px;
+          width: 100%;
+          grid-area: none;
+        }
         .pic {
           display: flex;
           width: 100%;
           height: 200px;
+          @media screen and (max-width: 767px) {
+            width: 300px;
+          }
           img {
             width: 100%;
             flex-grow: 1;
@@ -763,6 +800,10 @@ section.news {
       .flask {
         grid-area: flask;
         display: flex;
+        @media screen and (max-width: 767px) {
+          display: none;
+          grid-area: none;
+        }
         img {
           width: 100%;
           border-radius: 10px;
@@ -771,6 +812,10 @@ section.news {
       .DNA {
         grid-area: DNA;
         display: flex;
+        @media screen and (max-width: 767px) {
+          display: none;
+          grid-area: none;
+        }
         img {
           width: 100%;
           flex-grow: 1;
@@ -781,9 +826,17 @@ section.news {
         grid-area: card3;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 767px) {
+          width: 100%;
+          height: 400px;
+          grid-area: none;
+        }
         .pic {
           display: flex;
           height: 200px;
+          @media screen and (max-width: 767px) {
+            width: 300px;
+          }
           img {
             width: 100%;
             flex-grow: 1;
@@ -855,6 +908,38 @@ section.news {
               transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
             }
           }
+        }
+      }
+    }
+    .icon {
+      display: none;
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 32px;
+        position: absolute;
+        top: 50%;
+        i {
+          background-color: #0369b5;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          position: relative;
+          color: #fff;
+        }
+        .fa-chevron-left:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .fa-chevron-right:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }
