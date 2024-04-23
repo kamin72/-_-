@@ -53,9 +53,20 @@ header.main .hd_container .search_area .icon {
   color: #e89b04;
   cursor: pointer;
 }
+header.main .hd_container .bars {
+  position: relative;
+}
 header.main .hd_container .bars .fa-bars {
   font-size: 20px;
   color: #e89b04;
+  cursor: pointer;
+}
+header.main .hd_container .bars .fa-xmark {
+  font-size: 23px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   cursor: pointer;
 }
 
@@ -63,6 +74,9 @@ header.main .hd_container .bars .fa-bars {
   .bars .fa-bars {
     display: none;
     width: 0px;
+  }
+  .bars .fa-xmark {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -82,6 +96,7 @@ header.main .hd_container .bars .fa-bars {
     width: 200px;
     text-align: center;
     background-color: #fff;
+    border-radius: 10px;
   }
   header.main .hd_container nav ul {
     display: block;
@@ -93,12 +108,22 @@ header.main .hd_container .bars .fa-bars {
   header.main .hd_container .search_area {
     order: 1;
     border: none;
+    margin-left: 0;
   }
   header.main .hd_container .search_area input {
     display: none;
   }
+  header.main .hd_container .search_area .icon .fa-magnifying-glass {
+    color: #0369b5;
+  }
   header.main .hd_container .bars {
     order: 3;
+  }
+  header.main .hd_container .bars .fa-bars {
+    color: #0369b5;
+  }
+  header.main .hd_container .bars .fa-xmark {
+    color: #e89b04;
   }
 }
 footer.main .footer_container {

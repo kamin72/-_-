@@ -16,7 +16,7 @@ window.onload = function carousel() {
     for (let i = 0; i < slides.length; i++) {
       if (i + 1 == slides.length) {
         addActive(slides[0]);
-        setTimeout(removeActive, 3000, slides[i]);
+        setTimeout(removeActive, 1000, slides[i]);
         break;
       }
       if (slides[i].classList.contains("active")) {
@@ -25,7 +25,7 @@ window.onload = function carousel() {
         break;
       }
     }
-  }, 3000);
+  }, 4000);
 };
 function textSwitch_capming() {
   var para = document.getElementById("paragraph");
@@ -50,25 +50,16 @@ document.getElementById("competition").onclick = textSwitch_competition;
 //....最新消息
 let prev = document.getElementById("prev"),
   next = document.getElementById("next"),
-  cards = document.getElementsByClassName("active");
-let cardWidth;
-
-function resize() {
-  cardWidth = document.getElementById("cardWidth").offsetWidth;
-}
-resize();
-window.addEventListener("resize", resize);
+  cards = document.getElementById("cardWidth"),
+  card_content = document.getElementById("card_content");
 
 function nextCards() {
-  for (i = 0; i <= cards.length - 1; i++) {
-    cards[i].scrollLeft += cardWidth;
-  }
+  let cardWidth = cards.offsetWidth;
+  card_content.scrollLeft += cardWidth;
 }
+function preCards() {
+  let cardWidth = cards.offsetWidth;
+  card_content.scrollLeft -= cardWidth;
+}
+prev.onclick = preCards;
 next.onclick = nextCards;
-
-function previousCards() {
-  for (i = 0; i <= cards.length - 1; i++) {
-    cards[i].scrollLeft -= cardWidth;
-  }
-}
-prev.onclick = previousCards;
