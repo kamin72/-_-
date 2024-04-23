@@ -637,7 +637,7 @@ section.news .news_container .news_content {
     display: flex;
     width: 60%;
     overflow: hidden;
-    gap: 0px;
+    gap: 10px;
     scroll-behavior: smooth;
   }
 }
@@ -1011,7 +1011,7 @@ section.news .news_container .icon {
 
 .returnTop {
   position: fixed;
-  bottom: 50px;
+  bottom: 220px;
   right: 0;
   z-index: 20;
 }

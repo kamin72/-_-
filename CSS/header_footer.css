@@ -228,6 +228,11 @@ footer.main .footer_logo {
   height: 100%;
   flex-grow: 2;
 }
+@media screen and (max-width: 767px) {
+  footer.main .footer_logo {
+    display: none;
+  }
+}
 footer.main .footer_logo img {
   width: 100%;
   height: 100%;

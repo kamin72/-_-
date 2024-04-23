@@ -55,11 +55,11 @@ let prev = document.getElementById("prev"),
 
 function nextCards() {
   let cardWidth = cards.offsetWidth;
-  card_content.scrollLeft += cardWidth;
+  card_content.scrollLeft = card_content.scrollLeft + cardWidth + 10;
 }
 function preCards() {
   let cardWidth = cards.offsetWidth;
-  card_content.scrollLeft -= cardWidth;
+  card_content.scrollLeft = card_content.scrollLeft - cardWidth - 10;
 }
 prev.onclick = preCards;
 next.onclick = nextCards;
