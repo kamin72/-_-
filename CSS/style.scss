@@ -4,6 +4,8 @@ body {
 }
 
 section.banner {
+  position: relative;
+  z-index: 10;
   .bn_container {
     position: relative;
     .slogan {
@@ -22,8 +24,7 @@ section.banner {
     }
     .carousel {
       position: relative;
-      width: 100%;
-      height: 80vh;
+      aspect-ratio: 12/5;
       overflow: hidden;
       .carousel-item {
         position: absolute;
@@ -32,11 +33,9 @@ section.banner {
         top: 0;
         left: 100%;
         .slide-image {
-          aspect-ratio: 16/7;
+          width: 100%;
+          height: 100%;
           margin: auto;
-          @media screen and (max-width: 767px) {
-            aspect-ratio: 4/3;
-          }
           img {
             width: 100%;
             height: 100%;
@@ -963,7 +962,7 @@ section.news {
   position: fixed;
   bottom: 220px;
   right: 0;
-  z-index: 20;
+  z-index: 2;
   .circle {
     background-color: #0369b5;
     width: 50px;
