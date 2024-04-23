@@ -187,6 +187,7 @@ section.feature {
     background-size: 150px 250px, 300px 200px, 400px 100px;
     .ft_container {
       width: 500px;
+
       margin: auto;
       padding-top: 100px;
       .ft_content {
@@ -199,6 +200,7 @@ section.feature {
           margin-left: 20px;
           .idea {
             width: 100%;
+            height: 300px;
             clip-path: none;
             position: relative;
             img {
@@ -218,6 +220,7 @@ section.feature {
           }
           .background {
             width: 100%;
+            height: 300px;
             clip-path: none;
             img {
               object-fit: cover;
@@ -236,6 +239,7 @@ section.feature {
           }
           .method {
             width: 100%;
+            height: 300px;
             clip-path: none;
             img {
               object-fit: cover;
@@ -274,6 +278,43 @@ section.feature {
     }
   }
 }
+@media screen and (max-width: 576px) {
+  section.feature {
+    background-size: 150px 250px, 300px 200px, 300px 50px;
+    .ft_container {
+      width: 400px;
+      .ft_content {
+        .pic {
+          .idea {
+            height: 200px;
+          }
+          .background {
+            height: 200px;
+          }
+          .method {
+            height: 200px;
+          }
+        }
+      }
+      .more_icon {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        right: 50px;
+        .more_txt {
+          a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #636581;
+            border-bottom: 1px solid #636581;
+          }
+        }
+      }
+    }
+  }
+}
 section.course {
   background-image: url(../index_pic/燒瓶-removebg-preview.png),
     url(../index_pic/分子模型\ 5.png), url(../index_pic/Class.png);
@@ -283,6 +324,9 @@ section.course {
   @media screen and (max-width: 767px) {
     background-size: 150px 250px, 300px 200px, 400px 100px;
   }
+  @media screen and (max-width: 567px) {
+    background-size: 150px 250px, 300px 200px, 300px 50px;
+  }
   .cr_container {
     width: 1200px;
     margin: auto;
@@ -291,7 +335,7 @@ section.course {
       width: 900px;
     }
     @media screen and (max-width: 767px) {
-      width: 500px;
+      width: 100%;
     }
     .cr_header {
       padding: 0 50px;
@@ -376,7 +420,11 @@ section.course {
             display: flex;
             align-items: center;
             padding: 20px 0;
-            width: 100%;
+            margin: auto;
+            width: 80%;
+          }
+          @media screen and (max-width: 576px) {
+            flex-direction: column;
           }
           .exper {
             width: 100%;
@@ -387,6 +435,12 @@ section.course {
                 position: absolute;
               }
             }
+            @media screen and (max-width: 767px) {
+              width: 400px;
+            }
+            @media screen and (max-width: 576px) {
+              width: 300px;
+            }
             .mask {
               width: 100%;
               height: 100%;
@@ -396,12 +450,15 @@ section.course {
               @media screen and (max-width: 767px) {
                 display: block;
                 position: absolute;
+                top: 0;
+                left: 0;
               }
             }
             img {
               width: 100%;
               height: 100%;
               border-radius: 10px;
+              vertical-align: top;
             }
           }
           .exper::after {
@@ -434,11 +491,17 @@ section.course {
           .camping {
             width: 100%;
             position: relative;
-          }
-          &:hover {
-            .mask {
-              display: block;
-              position: absolute;
+            &:hover {
+              .mask {
+                display: block;
+                position: absolute;
+              }
+            }
+            @media screen and (max-width: 767px) {
+              width: 400px;
+            }
+            @media screen and (max-width: 576px) {
+              width: 300px;
             }
           }
           .mask {
@@ -457,6 +520,7 @@ section.course {
           width: 100%;
           height: 100%;
           border-radius: 10px;
+          vertical-align: top;
         }
       }
       .camping::after {
@@ -494,6 +558,12 @@ section.course {
             position: absolute;
           }
         }
+        @media screen and (max-width: 767px) {
+          width: 400px;
+        }
+        @media screen and (max-width: 576px) {
+          width: 300px;
+        }
         .mask {
           width: 100%;
           height: 100%;
@@ -509,6 +579,7 @@ section.course {
           width: 100%;
           height: 100%;
           border-radius: 10px;
+          vertical-align: top;
         }
       }
       .competition::after {
@@ -542,6 +613,13 @@ section.course {
       line-height: 32px;
       padding: 0 10px;
       font-family: "Noto Sans TC", sans-serif;
+      @media screen and (max-width: 767px) {
+        width: 400px;
+      }
+      @media screen and (max-width: 576px) {
+        width: 300px;
+        padding: 10px 0 0;
+      }
     }
   }
 }
@@ -570,6 +648,7 @@ section.news {
   @media screen and (max-width: 767px) {
     background-size: 150px 250px, 300px 200px, 300px 100px;
   }
+
   .news_container {
     width: 1200px;
     padding: 100px 0;
@@ -577,6 +656,9 @@ section.news {
     @media screen and (max-width: 767px) {
       width: 500px;
       position: relative;
+    }
+    @media screen and (max-width: 576px) {
+      width: 400px;
     }
     .news_header {
       padding: 0 50px;
@@ -608,6 +690,9 @@ section.news {
         gap: 10px;
         scroll-behavior: smooth;
       }
+      @media screen and (max-width: 576px) {
+        width: 50%;
+      }
       .Emc {
         grid-area: Emc;
         display: flex;
@@ -628,12 +713,19 @@ section.news {
           height: 400px;
           flex-grow: 1;
         }
+        @media screen and (max-width: 576px) {
+          height: 300px;
+        }
         .pic {
           display: flex;
           width: 100%;
           height: 200px;
           @media screen and (max-width: 767px) {
             width: 300px;
+          }
+          @media screen and (max-width: 576px) {
+            width: 200px;
+            height: 0px;
           }
           img {
             width: 100%;
@@ -650,7 +742,9 @@ section.news {
           flex-grow: 1;
           font-family: "Noto Sans TC", sans-serif;
           border-radius: 0 0 10px 10px;
-
+          @media screen and (max-width: 576px) {
+            border-radius: 10px;
+          }
           h3 {
             font-size: 18px;
             font-weight: bold;
@@ -667,6 +761,9 @@ section.news {
             @media screen and (max-width: 767px) {
               padding: 20px 0 20px;
               line-height: 35px;
+            }
+            @media screen and (max-width: 576px) {
+              -webkit-line-clamp: 5;
             }
           }
           .btn {
@@ -720,12 +817,19 @@ section.news {
           width: 100%;
           height: 400px;
         }
+        @media screen and (max-width: 576px) {
+          height: 300px;
+        }
         .pic {
           display: flex;
           width: 100%;
           height: 200px;
           @media screen and (max-width: 767px) {
             width: 300px;
+          }
+          @media screen and (max-width: 576px) {
+            width: 200px;
+            height: 0;
           }
           img {
             width: 100%;
@@ -746,6 +850,9 @@ section.news {
             height: 100px;
             flex-grow: 1;
           }
+          @media screen and (max-width: 576px) {
+            border-radius: 10px;
+          }
           h3 {
             font-size: 18px;
             font-weight: bold;
@@ -759,6 +866,9 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 576px) {
+              -webkit-line-clamp: 5;
+            }
           }
           .btn {
             color: #fff;
@@ -838,12 +948,19 @@ section.news {
           height: 400px;
           flex-grow: 1;
         }
+        @media screen and (max-width: 576px) {
+          height: 300px;
+        }
         .pic {
           display: flex;
           width: 100%;
           height: 200px;
           @media screen and (max-width: 767px) {
             width: 300px;
+          }
+          @media screen and (max-width: 576px) {
+            width: 200px;
+            height: 0;
           }
           img {
             width: 100%;
@@ -863,6 +980,9 @@ section.news {
             height: 100px;
             flex-grow: 1;
           }
+          @media screen and (max-width: 576px) {
+            border-radius: 10px;
+          }
           h3 {
             font-size: 18px;
             font-weight: bold;
@@ -876,6 +996,9 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 576px) {
+              -webkit-line-clamp: 5;
+            }
           }
           .btn {
             color: #fff;
@@ -954,6 +1077,9 @@ section.news {
           left: 50%;
           transform: translate(-50%, -50%);
         }
+      }
+      @media screen and (max-width: 576px) {
+        justify-content: space-around;
       }
     }
   }
