@@ -9,13 +9,21 @@ body {
   background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
   background-size: 150px 250px, 300px 200px, 600px 100px;
 }
+@media screen and (max-width: 767px) {
+  .explore {
+    background-size: 150px 250px, 300px 200px, 400px 100px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .explore {
+    background-size: 150px 250px, 300px 200px, 300px 50px;
+  }
+}
 .explore .ex_container {
   width: 100%;
+  margin: auto;
   padding-top: 100px;
   padding-bottom: 50px;
-}
-.explore .ex_container .ex_header {
-  padding: 0 50px;
 }
 .explore .ex_container .ex_header h2 {
   color: #0369b5;
@@ -29,9 +37,10 @@ body {
   width: 80%;
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
+  gap: 40px;
   overflow: hidden;
   padding-top: 50px;
+  scroll-behavior: smooth;
 }
 .explore .ex_container .article_list .article {
   width: 300px;
@@ -90,13 +99,20 @@ body {
   background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
   background-size: 150px 250px, 300px 200px, 600px 100px;
 }
+@media screen and (max-width: 767px) {
+  .library {
+    background-size: 150px 250px, 300px 200px, 400px 100px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .library {
+    background-size: 150px 250px, 300px 200px, 300px 50px;
+  }
+}
 .library .li_container {
   width: 100%;
   padding: 50px 0;
   position: relative;
-}
-.library .li_container .li_header {
-  padding: 0 50px;
 }
 .library .li_container .li_header h2 {
   color: #0369b5;
