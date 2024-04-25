@@ -91,6 +91,7 @@ header.main .hd_container .bars .fa-xmark {
   header.main .hd_container nav {
     visibility: hidden;
     position: absolute;
+    z-index: 10;
     top: 100%;
     right: 0;
     width: 200px;
