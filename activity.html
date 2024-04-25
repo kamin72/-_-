@@ -29,22 +29,26 @@
             <img src="./index_pic/logo.svg" alt="" />
           </a>
         </div>
-        <nav>
+        <nav id="nav">
           <ul>
             <li><a href="./resource_center.html">資源中心</a></li>
             <li><a href="./activity.html">活動體驗</a></li>
             <li><a href="./news.html">最新消息</a></li>
-            <li><a href="./reservation.html">預約體驗</a></li>
+            <li><a href="./reservation.html">預約活動</a></li>
             <li><a href="./about.html">關於我們</a></li>
             <li><a href="./recruit.html">招募成員</a></li>
           </ul>
-          <div class="search_area">
-            <input type="text" placeholder="search" />
-            <div class="icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
         </nav>
+        <div class="search_area">
+          <input type="text" placeholder="search" />
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="bars" id="bars">
+          <i class="fa-solid fa-bars" id="fa-bars"></i>
+          <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+        </div>
       </div>
     </header>
     <div class="course_overview">
@@ -287,5 +291,6 @@
         >
       </div>
     </footer>
+    <script src="./nav_bar.js"></script>
   </body>
 </html>
