@@ -13,15 +13,21 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   padding: 50px 0;
   width: 90%;
   margin: auto;
 }
 .course_overview .co_container .co_header {
+  position: relative;
   display: flex;
   align-items: center;
   padding: 50px 50px;
+}
+@media (max-width: 576px) {
+  .course_overview .co_container .co_header {
+    padding: 50px 0;
+    display: block;
+  }
 }
 .course_overview .co_container .co_header h2 {
   color: #0369b5;
@@ -30,12 +36,16 @@ body {
   letter-spacing: 1px;
   text-align: center;
   flex-grow: 10;
-  margin-left: 200px;
 }
 .course_overview .co_container .co_header .filter {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 576px) {
+  .course_overview .co_container .co_header .filter {
+    padding: 20px 0;
+  }
 }
 .course_overview .co_container .co_header .filter .selection {
   display: flex;
@@ -83,16 +93,20 @@ body {
 }
 .course_overview .co_container .content .container .row .col-12 .card .pic,
 .course_overview .co_container .content .container .row .col-xl-6 .card .pic {
-  width: 50%;
+  width: 200px;
+  height: 200px;
 }
 .course_overview .co_container .content .container .row .col-12 .card .pic img,
 .course_overview .co_container .content .container .row .col-xl-6 .card .pic img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .course_overview .co_container .content .container .row .col-12 .card .txt,
 .course_overview .co_container .content .container .row .col-xl-6 .card .txt {
-  width: 500px;
+  width: 100%;
   height: 300px;
   padding: 0 10px;
 }
