@@ -50,7 +50,7 @@ document.getElementById("competition").onclick = textSwitch_competition;
 //....最新消息
 let prev = document.getElementById("prev"),
   next = document.getElementById("next"),
-  cards = document.getElementById("cardWidth"),
+  cards = document.querySelector(".active"),
   card_content = document.getElementById("card_content");
 
 function nextCards() {

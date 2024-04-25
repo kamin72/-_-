@@ -139,8 +139,8 @@ footer.main {
       display: flex;
       align-items: center;
       letter-spacing: 2px;
-      @media screen and (max-width: 767px) {
-        // display: block;
+      @media screen and (max-width: 576px) {
+        height: 400px;
       }
       .content {
         display: flex;
@@ -148,11 +148,18 @@ footer.main {
         // align-items: center;
         flex-grow: 5;
         padding-top: 20px;
+        @media screen and (max-width: 576px) {
+          flex-direction: column;
+          align-items: center;
+        }
         .info {
           display: flex;
           flex-direction: column;
           gap: 10px;
           color: #fff;
+          @media screen and (max-width: 576px) {
+            padding-bottom: 20px;
+          }
           h4 {
             padding-bottom: 10px;
             border-bottom: 1px solid #fff;
@@ -170,12 +177,19 @@ footer.main {
           color: #fff;
           .follow_us {
             text-align: center;
+            @media screen and (max-width: 576px) {
+              padding: 20px 0;
+            }
             h4 {
               padding-bottom: 10px;
             }
           }
           .subscribe {
             padding: 20px 0;
+            @media screen and (max-width: 576px) {
+              padding: unset;
+              padding-top: 20px;
+            }
             p {
               text-align: center;
             }

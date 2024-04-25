@@ -135,17 +135,33 @@ footer.main .footer_container .main_content {
   align-items: center;
   letter-spacing: 2px;
 }
+@media screen and (max-width: 576px) {
+  footer.main .footer_container .main_content {
+    height: 400px;
+  }
+}
 footer.main .footer_container .main_content .content {
   display: flex;
   justify-content: space-evenly;
   flex-grow: 5;
   padding-top: 20px;
 }
+@media screen and (max-width: 576px) {
+  footer.main .footer_container .main_content .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer.main .footer_container .main_content .content .info {
   display: flex;
   flex-direction: column;
   gap: 10px;
   color: #fff;
+}
+@media screen and (max-width: 576px) {
+  footer.main .footer_container .main_content .content .info {
+    padding-bottom: 20px;
+  }
 }
 footer.main .footer_container .main_content .content .info h4 {
   padding-bottom: 10px;
@@ -164,11 +180,22 @@ footer.main .footer_container .main_content .content .others {
 footer.main .footer_container .main_content .content .others .follow_us {
   text-align: center;
 }
+@media screen and (max-width: 576px) {
+  footer.main .footer_container .main_content .content .others .follow_us {
+    padding: 20px 0;
+  }
+}
 footer.main .footer_container .main_content .content .others .follow_us h4 {
   padding-bottom: 10px;
 }
 footer.main .footer_container .main_content .content .others .subscribe {
   padding: 20px 0;
+}
+@media screen and (max-width: 576px) {
+  footer.main .footer_container .main_content .content .others .subscribe {
+    padding: unset;
+    padding-top: 20px;
+  }
 }
 footer.main .footer_container .main_content .content .others .subscribe p {
   text-align: center;
