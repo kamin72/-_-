@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/header_footer.css" />
-    <link rel="stylesheet" href="./CSS/news.css" />
+    <link rel="stylesheet" href="./CSS/news_page2.css" />
     <link rel="stylesheet" href="./CSS/grid system.css" />
     <link rel="stylesheet" href="./CSS/Reset.css" />
     <link
@@ -353,16 +353,6 @@
       function hidden() {
         if (window.innerWidth <= 767) {
           for (var i = 0; i <= news.length - 1; i++) {
-            news[i].style.display = "none";
-          }
-          for (var i = 0; i <= publications.length - 1; i++) {
-            publications[i].style.display = "block";
-          }
-          for (var i = 0; i <= activities.length - 1; i++) {
-            activities[i].style.display = "block";
-          }
-        } else {
-          for (var i = 0; i <= news.length - 1; i++) {
             news[i].style.display = "block";
           }
           for (var i = 0; i <= publications.length - 1; i++) {
@@ -371,11 +361,21 @@
           for (var i = 0; i <= activities.length - 1; i++) {
             activities[i].style.display = "none";
           }
+        } else {
+          for (var i = 0; i <= news.length - 1; i++) {
+            news[i].style.display = "none";
+          }
+          for (var i = 0; i <= publications.length - 1; i++) {
+            publications[i].style.display = "block";
+          }
+          for (var i = 0; i <= activities.length - 1; i++) {
+            activities[i].style.display = "block";
+          }
         }
       }
       window.onload = hidden;
     </script>
-    >
+
     <script src="./nav_bar.js"></script>
   </body>
 </html>
