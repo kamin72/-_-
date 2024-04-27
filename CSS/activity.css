@@ -87,6 +87,11 @@ body {
 .course_overview .co_container .content .container {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .course_overview .co_container .content .container {
+    width: 90%;
+  }
+}
 .course_overview .co_container .content .container .row .col-12 .card,
 .course_overview .co_container .content .container .row .col-xl-6 .card {
   display: flex;

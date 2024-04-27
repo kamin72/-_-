@@ -80,6 +80,9 @@ body {
     .content {
       .container {
         width: 100%;
+        @media (max-width: 576px) {
+          width: 90%;
+        }
         .row {
           .col-12,
           .col-xl-6 {
