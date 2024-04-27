@@ -49,7 +49,7 @@ header.main .hd_container .search_area input {
   letter-spacing: 1px;
 }
 header.main .hd_container .search_area .icon {
-  font-size: 20px;
+  font-size: 25px;
   color: #e89b04;
   cursor: pointer;
 }
@@ -57,12 +57,12 @@ header.main .hd_container .bars {
   position: relative;
 }
 header.main .hd_container .bars .fa-bars {
-  font-size: 20px;
+  font-size: 25px;
   color: #e89b04;
   cursor: pointer;
 }
 header.main .hd_container .bars .fa-xmark {
-  font-size: 23px;
+  font-size: 27px;
   display: none;
   position: absolute;
   top: 0;
