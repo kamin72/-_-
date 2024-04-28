@@ -161,10 +161,10 @@ body {
   right: 11px;
   top: 6px;
 }
-.content .page_num span:first-child {
+.content .page_num span:nth-child(2) {
   background-color: #0369b5;
 }
-.content .page_num span:first-child a:first-child {
+.content .page_num span:nth-child(2) a:first-child {
   color: #fff;
 }
 
