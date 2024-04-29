@@ -2,20 +2,20 @@ let nav = document.getElementById("nav"),
   fa_bars = document.getElementById("fa-bars"),
   fa_xmark = document.getElementById("fa-xmark");
 
-function barDisplay() {
-  if (window.innerWidth <= 767) {
-    nav.style.visibility = "visible";
+function barHidden() {
+  if (window.innerWidth <= 767 && nav.classList.contains("hidden")) {
     fa_xmark.style.display = "block";
     fa_bars.style.visibility = "hidden";
+    nav.classList.remove("hidden");
   }
 }
-fa_bars.onclick = barDisplay;
+fa_bars.onclick = barHidden;
 
-function barHidden() {
+function barDisplay() {
   if (window.innerWidth <= 767) {
-    nav.style.visibility = "hidden";
     fa_xmark.style.display = "none";
     fa_bars.style.visibility = "visible";
+    nav.classList.add("hidden");
   }
 }
-fa_xmark.onclick = barHidden;
+fa_xmark.onclick = barDisplay;
