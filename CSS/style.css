@@ -512,6 +512,13 @@ section.course .cr_container .cr_content .topic_course .card .exper::after {
     color: #fff;
   }
 }
+@media screen and (max-width: 576px) {
+  section.course .cr_container .cr_content .topic_course .card .exper::after {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+  }
+}
 section.course .cr_container .cr_content .topic_course .card .exper:hover::after {
   content: "主題實驗";
   display: block;
@@ -579,6 +586,13 @@ section.course .cr_container .cr_content .camping::after {
     color: #fff;
   }
 }
+@media screen and (max-width: 576px) {
+  section.course .cr_container .cr_content .camping::after {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+  }
+}
 section.course .cr_container .cr_content .camping:hover::after {
   content: "科學體驗";
   display: block;
@@ -644,6 +658,13 @@ section.course .cr_container .cr_content .competition::after {
 @media screen and (max-width: 767px) {
   section.course .cr_container .cr_content .competition::after {
     color: #fff;
+  }
+}
+@media screen and (max-width: 576px) {
+  section.course .cr_container .cr_content .competition::after {
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
   }
 }
 section.course .cr_container .cr_content .competition:hover::after {

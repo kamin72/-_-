@@ -486,6 +486,11 @@ section.course {
             @media screen and (max-width: 767px) {
               color: #fff;
             }
+            @media screen and (max-width: 576px) {
+              font-size: 20px;
+              width: 100px;
+              text-align: center;
+            }
           }
           .exper:hover::after {
             content: "主題實驗";
@@ -547,6 +552,11 @@ section.course {
         @media screen and (max-width: 767px) {
           color: #fff;
         }
+        @media screen and (max-width: 576px) {
+          font-size: 20px;
+          width: 100px;
+          text-align: center;
+        }
       }
       .camping:hover::after {
         content: "科學體驗";
@@ -605,6 +615,11 @@ section.course {
         cursor: pointer;
         @media screen and (max-width: 767px) {
           color: #fff;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 20px;
+          width: 100px;
+          text-align: center;
         }
       }
       .competition:hover::after {
