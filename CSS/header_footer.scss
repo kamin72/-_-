@@ -27,8 +27,43 @@ header.main {
           a {
             text-decoration: none;
             color: #636581;
+            font-weight: 100;
+            transition: all 0.5s;
+            &:hover {
+              font-weight: bold;
+              transition: all 0.5s;
+            }
+          }
+          a::after {
+            content: "";
+            display: block;
+            background-color: #0369b5;
+            margin: 0 auto;
+            width: 0px;
+            height: 0px;
+            transition: all 0.5s;
+          }
+          a:hover::after {
+            width: 68px;
+            height: 2px;
+            transition: all 0.5s;
           }
         }
+      }
+    }
+    .underline {
+      a {
+        text-decoration: none;
+        color: #636581;
+        font-weight: bold;
+      }
+      a::after {
+        content: "";
+        display: block;
+        background-color: #0369b5;
+        margin: 0 auto;
+        width: 68px;
+        height: 2px;
       }
     }
     .search_area {
