@@ -381,5 +381,13 @@
     </footer>
     <script src="./nav_bar.js"></script>
     <script src="./article_carousel.js"></script>
+    <script>
+      let lis = document.querySelectorAll("li");
+      for (let i = 0; i <= lis.length - 1; i++) {
+        if (lis[i].classList.contains("underline") && window.innerWidth < 768) {
+          lis[i].classList.remove("underline");
+        }
+      }
+    </script>
   </body>
 </html>

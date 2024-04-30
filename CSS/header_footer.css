@@ -131,7 +131,7 @@ header.main .hd_container .bars .fa-xmark {
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
-    transition: all 0.8s;
+    transition: all 0.5s;
   }
   header.main .hd_container nav ul {
     display: block;
@@ -139,13 +139,13 @@ header.main .hd_container .bars .fa-xmark {
   header.main .hd_container nav ul li {
     padding: 10px 0 10px 30px;
     text-align: center;
-    transition: all 0.8s;
+    transition: all 0.5s;
   }
   header.main .hd_container nav.hidden {
     height: 0;
   }
   header.main .hd_container nav.hidden ul li {
-    padding: 0 0 5px 30px;
+    padding: 0 0 0 120px;
     font-size: 0;
   }
   header.main .hd_container .search_area {
