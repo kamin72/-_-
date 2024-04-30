@@ -67,6 +67,9 @@ body {
     width: 60%;
   }
 }
+.content .container .row {
+  margin: auto;
+}
 .content .container .row .col-12 .card,
 .content .container .row .col-md-6 .card,
 .content .container .row .col-xl-4 .card {
