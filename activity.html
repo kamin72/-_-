@@ -20,6 +20,7 @@
       rel="stylesheet" />
     <link rel="icon" href="./index_pic/Group 22.png" />
     <title>活動體驗</title>
+    <script src="./jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <header class="main">
@@ -57,7 +58,7 @@
           <h2>課程總覽</h2>
           <div class="filter">
             <div class="selection">
-              <label for="selection">課程選擇:</label>
+              <label for="course">課程選擇:</label>
               <select name="course" id="course">
                 <option value=""></option>
                 <option value="">大象牙膏</option>
@@ -69,12 +70,12 @@
               </select>
             </div>
             <div class="sort_by">
-              <label for="sort">類別篩選:</label>
+              <label for="topic">類別篩選:</label>
               <select name="topic" id="topic">
                 <option value=""></option>
-                <option value="">主題實驗</option>
-                <option value="">科學體驗</option>
-                <option value="">專題競賽</option>
+                <option value="exper">主題實驗</option>
+                <option value="activity">科學體驗</option>
+                <option value="competition">專題競賽</option>
               </select>
             </div>
           </div>
@@ -83,7 +84,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card exper">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 108.jpg" />
                   </div>
@@ -96,7 +97,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card exper">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 109.jpg" />
                   </div>
@@ -111,7 +112,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card activity">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 111.jpg" />
                   </div>
@@ -128,7 +129,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card activity">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 110.jpg" />
                   </div>
@@ -148,7 +149,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card competition">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 112.jpg" />
                   </div>
@@ -163,7 +164,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card">
+                <div class="card competition">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 113.jpg" />
                   </div>
@@ -299,6 +300,26 @@
           lis[i].classList.remove("underline");
         }
       }
+      //select_topic篩選功能
+      $(function () {
+        $("#topic").change(function () {
+          let value = $(this).val();
+          console.log(value);
+          if (value == "exper") {
+            $(".exper").show();
+            $(".activity").hide();
+            $(".competition").hide();
+          } else if (value == "activity") {
+            $(".exper").hide();
+            $(".activity").show();
+            $(".competition").hide();
+          } else if (value == "competition") {
+            $(".exper").hide();
+            $(".activity").hide();
+            $(".competition").show();
+          }
+        });
+      });
     </script>
   </body>
 </html>
