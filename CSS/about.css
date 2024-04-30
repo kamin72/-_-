@@ -92,8 +92,20 @@ section.introduction .in_container .card {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 576px) {
+  section.introduction .in_container .card {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+}
 section.introduction .in_container .card .pic {
   width: 300px;
+}
+@media (max-width: 767px) {
+  section.introduction .in_container .card .pic {
+    width: 100%;
+  }
 }
 section.introduction .in_container .card .pic img {
   width: 100%;
@@ -102,6 +114,11 @@ section.introduction .in_container .card .pic img {
 }
 section.introduction .in_container .card .txt {
   width: 700px;
+}
+@media (max-width: 767px) {
+  section.introduction .in_container .card .txt {
+    width: 100%;
+  }
 }
 section.introduction .in_container .card .txt h3 {
   font-weight: bold;
@@ -112,6 +129,20 @@ section.introduction .in_container .card .txt ul {
   font-family: "Noto Sans TC", sans-serif;
   list-style: disc;
   line-height: 30px;
+}
+@media (max-width: 576px) {
+  section.introduction .in_container .card:nth-child(2) .pic {
+    order: 1;
+  }
+  section.introduction .in_container .card:nth-child(2) .txt {
+    order: 2;
+  }
+  section.introduction .in_container .card:nth-child(4) .pic {
+    order: 1;
+  }
+  section.introduction .in_container .card:nth-child(4) .txt {
+    order: 2;
+  }
 }
 
 .returnTop {
