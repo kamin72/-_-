@@ -126,11 +126,12 @@ header.main {
       }
       nav {
         position: absolute;
+        padding-top: 10px;
         z-index: 10;
         top: 100%;
         right: 0px;
         width: 200px;
-        height: 220px;
+        height: 300px;
         text-align: center;
         background-color: #fff;
         border-radius: 10px;
@@ -138,17 +139,19 @@ header.main {
         ul {
           display: block;
           li {
-            padding: 10px 0 10px 30px;
+            padding: 10px 0 20px 30px;
             text-align: center;
             transition: all 0.5s;
+            font-size: 20px;
           }
         }
       }
       nav.hidden {
         height: 0;
+        padding-top: 0;
         ul {
           li {
-            padding: 0 0 0 120px;
+            display: none;
             font-size: 0;
           }
         }
