@@ -194,9 +194,9 @@ body {
 
 .returnTop {
   position: fixed;
-  bottom: 50px;
+  top: 70vh;
   right: 0;
-  z-index: 20;
+  z-index: 2;
 }
 .returnTop .circle {
   background-color: #0369b5;
