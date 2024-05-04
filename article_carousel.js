@@ -1,15 +1,15 @@
 let article_list = document.querySelector(".article_list"),
-  article = document.querySelector(".article"),
+  container = document.querySelector(".ex_container"),
+  articles = document.querySelector(".article"),
   next = document.querySelector(".arrow_right"),
-  pre = document.querySelector(".arrow_left");
+  pre = document.querySelector(".arrow_left"),
+  articleWidth = articles.offsetWidth;
 
 function nextArticle() {
-  let articleWidth = article.offsetWidth;
-  article_list.scrollLeft = article_list.scrollLeft + articleWidth + 40;
+  article_list.scrollLeft = article_list.scrollLeft + articleWidth;
 }
 function preArticle() {
-  let articleWidth = article.offsetWidth;
-  article_list.scrollLeft = article_list.scrollLeft - articleWidth - 40;
+  article_list.scrollLeft = article_list.scrollLeft - articleWidth;
 }
 next.onclick = nextArticle;
 pre.onclick = preArticle;

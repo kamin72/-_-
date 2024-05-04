@@ -14,7 +14,7 @@ body {
     background-size: 150px 250px, 300px 200px, 300px 50px;
   }
   .ex_container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -27,33 +27,48 @@ body {
         text-align: center;
       }
     }
-    .article_list {
-      margin: auto;
-      width: 80%;
-      display: flex;
-      justify-content: flex-start;
-      gap: 40px;
-      overflow: hidden;
+    .wrap {
+      position: relative;
       padding-top: 50px;
-      scroll-behavior: smooth;
-      .article {
-        width: 300px;
-        .pic {
+      width: 1020px;
+      margin: auto;
+      @media screen and (max-width: 1199px) {
+        width: 680px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 340px;
+      }
+      @media screen and (max-width: 399px) {
+        width: 80%;
+      }
+      .article_list {
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        scroll-behavior: smooth;
+        overflow: hidden;
+        .article {
           width: 300px;
-          img {
-            width: 100%;
+          padding: 0 20px;
+
+          .pic {
+            width: 300px;
+            img {
+              width: 100%;
+            }
           }
-        }
-        .txt {
-          p {
-            font-family: "Noto Sans TC", sans-serif;
-            line-height: 28px;
-            color: #333;
-            padding: 2px 0;
+          .txt {
+            p {
+              font-family: "Noto Sans TC", sans-serif;
+              line-height: 28px;
+              color: #333;
+              padding: 2px 0;
+            }
           }
         }
       }
     }
+
     .icon {
       display: flex;
       justify-content: center;

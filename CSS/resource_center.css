@@ -20,7 +20,7 @@ body {
   }
 }
 .explore .ex_container {
-  width: 100%;
+  width: 80%;
   margin: auto;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -32,26 +32,45 @@ body {
   letter-spacing: 1px;
   text-align: center;
 }
-.explore .ex_container .article_list {
+.explore .ex_container .wrap {
+  position: relative;
+  padding-top: 50px;
+  width: 1020px;
   margin: auto;
-  width: 80%;
+}
+@media screen and (max-width: 1199px) {
+  .explore .ex_container .wrap {
+    width: 680px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .explore .ex_container .wrap {
+    width: 340px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .explore .ex_container .wrap {
+    width: 80%;
+  }
+}
+.explore .ex_container .wrap .article_list {
+  margin: auto;
   display: flex;
   justify-content: flex-start;
-  gap: 40px;
-  overflow: hidden;
-  padding-top: 50px;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
-.explore .ex_container .article_list .article {
+.explore .ex_container .wrap .article_list .article {
+  width: 300px;
+  padding: 0 20px;
+}
+.explore .ex_container .wrap .article_list .article .pic {
   width: 300px;
 }
-.explore .ex_container .article_list .article .pic {
-  width: 300px;
-}
-.explore .ex_container .article_list .article .pic img {
+.explore .ex_container .wrap .article_list .article .pic img {
   width: 100%;
 }
-.explore .ex_container .article_list .article .txt p {
+.explore .ex_container .wrap .article_list .article .txt p {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 28px;
   color: #333;
