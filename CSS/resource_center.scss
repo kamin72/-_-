@@ -49,6 +49,7 @@ body {
         .article {
           width: 300px;
           padding: 0 20px;
+          cursor: pointer;
           @media screen and (max-width: 399px) {
             width: 280px;
           }
