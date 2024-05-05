@@ -5,8 +5,6 @@ let article_list = document.querySelector(".article_list"),
   pre = document.querySelector(".arrow_left"),
   articleWidth = articles.offsetWidth;
 
-articleWidth = wrap.offsetWidth;
-
 window.onresize = function () {
   articleWidth = wrap.offsetWidth;
 };
