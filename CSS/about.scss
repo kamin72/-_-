@@ -36,12 +36,18 @@ section.banner {
       @media (max-width: 576px) {
         line-height: 28px;
         margin-bottom: 10%;
-        text-align: center;
+        text-align: left;
+        width: 100%;
+        right: 50%;
+        translate: 50% 0;
       }
       p {
         font-size: clamp(14px, 2.5vw, 40px);
         font-family: "Noto Sans TC", sans-serif;
         color: #fff;
+        @media (max-width: 576px) {
+          padding: 0 10px;
+        }
         span {
           padding: 0 5px;
           text-shadow: 2px 2px #333;

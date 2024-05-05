@@ -46,13 +46,21 @@ section.banner .banner_container .txt {
   section.banner .banner_container .txt {
     line-height: 28px;
     margin-bottom: 10%;
-    text-align: center;
+    text-align: left;
+    width: 100%;
+    right: 50%;
+    translate: 50% 0;
   }
 }
 section.banner .banner_container .txt p {
   font-size: clamp(14px, 2.5vw, 40px);
   font-family: "Noto Sans TC", sans-serif;
   color: #fff;
+}
+@media (max-width: 576px) {
+  section.banner .banner_container .txt p {
+    padding: 0 10px;
+  }
 }
 section.banner .banner_container .txt p span {
   padding: 0 5px;
