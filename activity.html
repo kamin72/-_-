@@ -61,12 +61,12 @@
               <label for="course">課程選擇:</label>
               <select name="course" id="course">
                 <option value=""></option>
-                <option value="">大象牙膏</option>
-                <option value="">熔岩燈</option>
-                <option value="">科學營隊</option>
-                <option value="">未來科技</option>
-                <option value="">科學嘉年華</option>
-                <option value="">小論文競賽</option>
+                <option value="elephant_toothPaste">大象牙膏</option>
+                <option value="lava_lamp">熔岩燈</option>
+                <option value="camping">科學營隊</option>
+                <option value="future">未來科技</option>
+                <option value="conference">科學嘉年華</option>
+                <option value="paper">小論文競賽</option>
               </select>
             </div>
             <div class="sort_by">
@@ -84,7 +84,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card exper">
+                <div class="card exper elephant_toothPaste">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 108.jpg" />
                   </div>
@@ -97,7 +97,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card exper">
+                <div class="card exper lava_lamp">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 109.jpg" />
                   </div>
@@ -112,7 +112,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card activity">
+                <div class="card activity camping">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 111.jpg" />
                   </div>
@@ -129,7 +129,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card activity">
+                <div class="card activity future">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 110.jpg" />
                   </div>
@@ -149,7 +149,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card competition">
+                <div class="card competition conference">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 112.jpg" />
                   </div>
@@ -164,7 +164,7 @@
                 </div>
               </div>
               <div class="col-xl-6 col-md-6 col-12">
-                <div class="card competition">
+                <div class="card competition paper">
                   <div class="pic">
                     <img src="./activity_pic/Rectangle 113.jpg" />
                   </div>
@@ -300,11 +300,122 @@
           lis[i].classList.remove("underline");
         }
       }
+      //select_course篩選功能
+      $(function () {
+        $("#course").change(function () {
+          let value = $(this).val();
+          if ($(window).width() > 768) {
+            sort();
+          } else {
+            sort_RWD();
+          }
+          function sort_RWD() {
+            if (value == "elephant_toothPaste") {
+              $(".elephant_toothPaste").show();
+              $(".lava_lamp").hide();
+              $(".activity").hide();
+              $(".competition").hide();
+            } else if (value == "lava_lamp") {
+              $(".elephant_toothPaste").hide();
+              $(".lava_lamp").show();
+              $(".activity").hide();
+              $(".competition").hide();
+            } else if (value == "camping") {
+              $(".exper").hide();
+              $(".camping").show();
+              $(".future").hide();
+              $(".competition").hide();
+            } else if (value == "future") {
+              $(".exper").hide();
+              $(".camping").hide();
+              $(".future").show();
+              $(".competition").hide();
+            } else if (value == "conference") {
+              $(".exper").hide();
+              $(".activity").hide();
+              $(".conference").show();
+              $(".paper").hide();
+            } else if (value == "paper") {
+              $(".exper").hide();
+              $(".activity").hide();
+              $(".conference").hide();
+              $(".paper").show();
+            } else {
+              $(".exper").show();
+              $(".activity").show();
+              $(".competition").show();
+            }
+          }
+          function sort() {
+            if (value == "elephant_toothPaste") {
+              $(".elephant_toothPaste").show();
+              $(".elephant_toothPaste").css({
+                position: "relative",
+                left: "50%",
+              });
+              $(".lava_lamp").hide();
+              $(".activity").hide();
+              $(".competition").hide();
+            } else if (value == "lava_lamp") {
+              $(".elephant_toothPaste").hide();
+              $(".lava_lamp").show();
+              $(".lava_lamp").css({
+                position: "relative",
+                right: "50%",
+              });
+              $(".activity").hide();
+              $(".competition").hide();
+            } else if (value == "camping") {
+              $(".exper").hide();
+              $(".camping").show();
+              $(".camping").css({
+                position: "relative",
+                left: "50%",
+              });
+              $(".future").hide();
+              $(".competition").hide();
+            } else if (value == "future") {
+              $(".exper").hide();
+              $(".camping").hide();
+              $(".future").show();
+              $(".future").css({
+                position: "relative",
+                right: "50%",
+              });
+              $(".competition").hide();
+            } else if (value == "conference") {
+              $(".exper").hide();
+              $(".activity").hide();
+              $(".conference").show();
+              $(".conference").css({
+                position: "relative",
+                left: "50%",
+              });
+              $(".paper").hide();
+            } else if (value == "paper") {
+              $(".exper").hide();
+              $(".activity").hide();
+              $(".conference").hide();
+              $(".paper").show();
+              $(".paper").css({
+                position: "relative",
+                right: "50%",
+              });
+            } else {
+              $(".card").css({
+                position: "static",
+              });
+              $(".exper").show();
+              $(".activity").show();
+              $(".competition").show();
+            }
+          }
+        });
+      });
       //select_topic篩選功能
       $(function () {
         $("#topic").change(function () {
           let value = $(this).val();
-          console.log(value);
           if (value == "exper") {
             $(".exper").show();
             $(".activity").hide();
@@ -316,6 +427,10 @@
           } else if (value == "competition") {
             $(".exper").hide();
             $(".activity").hide();
+            $(".competition").show();
+          } else {
+            $(".exper").show();
+            $(".activity").show();
             $(".competition").show();
           }
         });
