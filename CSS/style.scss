@@ -675,11 +675,13 @@ section.news {
   @media screen and (max-width: 767px) {
     background-size: 150px 250px, 300px 200px, 300px 100px;
   }
-
   .news_container {
     width: 1200px;
     padding: 100px 0;
     margin: auto;
+    @media screen and (max-width: 1199px) {
+      width: 80%;
+    }
     @media screen and (max-width: 767px) {
       width: 500px;
       position: relative;
@@ -1116,6 +1118,8 @@ section.news {
   top: 70vh;
   right: 0;
   z-index: 2;
+  opacity: 0;
+  transition: all 0.5s;
   .circle {
     background-color: #0369b5;
     width: 50px;
@@ -1128,4 +1132,8 @@ section.news {
       top: 10px;
     }
   }
+}
+.fade {
+  opacity: 1;
+  transition: all 0.5s;
 }
