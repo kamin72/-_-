@@ -72,6 +72,12 @@ body {
     translate: -50% 0;
   }
 }
+@media (max-width: 370px) {
+  .content .card_list {
+    left: 20%;
+    translate: -20% 0;
+  }
+}
 .content .card_list .card {
   width: 25%;
   height: 250px;
@@ -86,6 +92,7 @@ body {
 @media (max-width: 576px) {
   .content .card_list .card {
     height: 150px;
+    min-width: 100px;
   }
 }
 .content .card_list .card h3 {
@@ -192,6 +199,11 @@ body {
     height: unset;
     top: 0;
     width: 25%;
+  }
+}
+@media (max-width: 576px) {
+  .content .card_list .card:nth-child(2) {
+    width: 100px;
   }
 }
 .content .card_list .card:nth-child(3) {
