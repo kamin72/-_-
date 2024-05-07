@@ -4,7 +4,8 @@ body {
 }
 
 .course_overview {
-  background-image: url(../index_pic/燒瓶-removebg-preview.png), url(../index_pic/分子模型\ 5.png), url(../activity_pic/Class.png);
+  background-image: url(../index_pic/燒瓶-removebg-preview.png),
+    url(../index_pic/分子模型\ 5.png), url(../activity_pic/Class.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0 top 0, right 0 bottom -20px, left 50px top 50px;
   background-size: 150px 250px, 300px 200px, 600px 100px;
@@ -112,12 +113,20 @@ body {
   height: 200px;
 }
 .course_overview .co_container .content .container .row .col-12 .card .pic img,
-.course_overview .co_container .content .container .row .col-xl-6 .card .pic img {
+.course_overview
+  .co_container
+  .content
+  .container
+  .row
+  .col-xl-6
+  .card
+  .pic
+  img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .course_overview .co_container .content .container .row .col-12 .card .txt,
 .course_overview .co_container .content .container .row .col-xl-6 .card .txt {
@@ -126,7 +135,15 @@ body {
   padding: 0 10px;
 }
 .course_overview .co_container .content .container .row .col-12 .card .txt h3,
-.course_overview .co_container .content .container .row .col-xl-6 .card .txt h3 {
+.course_overview
+  .co_container
+  .content
+  .container
+  .row
+  .col-xl-6
+  .card
+  .txt
+  h3 {
   font-size: 20px;
   font-weight: bold;
   padding: 2px;
@@ -186,7 +203,8 @@ body {
 }
 .course_overview .co_container .immediately .btn-5:hover {
   border: 0px solid;
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(3, 105, 181, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
@@ -216,4 +234,4 @@ body {
 .fade {
   opacity: 1;
   transition: all 0.5s;
-}/*# sourceMappingURL=activity.css.map */
+} /*# sourceMappingURL=activity.css.map */
