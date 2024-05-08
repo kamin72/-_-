@@ -442,6 +442,7 @@ section.course {
           .exper {
             width: 100%;
             position: relative;
+            cursor: pointer;
             &:hover {
               .mask {
                 display: block;
@@ -509,6 +510,7 @@ section.course {
           .camping {
             width: 100%;
             position: relative;
+            cursor: pointer;
             &:hover {
               .mask {
                 display: block;
@@ -575,6 +577,7 @@ section.course {
       .competition {
         width: 100%;
         position: relative;
+        cursor: pointer;
         &:hover {
           .mask {
             display: block;
