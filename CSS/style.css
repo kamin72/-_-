@@ -472,6 +472,7 @@ section.course .cr_container .cr_content .topic_course .card .exper:hover .mask 
 @media screen and (max-width: 767px) {
   section.course .cr_container .cr_content .topic_course .card .exper {
     width: 400px;
+    cursor: unset;
   }
 }
 @media screen and (max-width: 576px) {
@@ -550,6 +551,7 @@ section.course .cr_container .cr_content .topic_course .card .camping:hover .mas
 @media screen and (max-width: 767px) {
   section.course .cr_container .cr_content .topic_course .card .camping {
     width: 400px;
+    cursor: unset;
   }
 }
 @media screen and (max-width: 576px) {
@@ -625,6 +627,7 @@ section.course .cr_container .cr_content .competition:hover .mask {
 @media screen and (max-width: 767px) {
   section.course .cr_container .cr_content .competition {
     width: 400px;
+    cursor: unset;
   }
 }
 @media screen and (max-width: 576px) {
