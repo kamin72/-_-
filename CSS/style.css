@@ -16,6 +16,12 @@ section.banner .bn_container .slogan {
   left: 100px;
   z-index: 2;
 }
+@media screen and (max-width: 1199px) {
+  section.banner .bn_container .slogan {
+    top: 40px;
+    left: 20px;
+  }
+}
 section.banner .bn_container .slogan p {
   font-size: clamp(20px, 3.9vw, 60px);
   font-family: "Noto Sans TC", sans-serif;

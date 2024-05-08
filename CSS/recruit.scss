@@ -28,8 +28,8 @@ body {
         line-height: 40px;
       }
       @media (max-width: 399px) {
-        width: 80%;
-        line-height: 28px;
+        width: 90%;
+        line-height: 24px;
         top: 0;
       }
       h3 {
@@ -37,7 +37,6 @@ body {
         font-family: "Noto Sans TC", sans-serif;
         font-weight: 500;
         color: #fff;
-        // white-space: nowrap;
       }
       p {
         font-size: clamp(12px, 1.6vw, 32px);
@@ -46,7 +45,7 @@ body {
       }
     }
     .pic {
-      aspect-ratio: 16/9;
+      aspect-ratio: 12/5;
       position: relative;
       z-index: -2;
       img {

@@ -13,6 +13,10 @@ section.banner {
       top: 50px;
       left: 100px;
       z-index: 2;
+      @media screen and (max-width: 1199px) {
+        top: 40px;
+        left: 20px;
+      }
       p {
         font-size: clamp(20px, 3.9vw, 60px);
         font-family: "Noto Sans TC", sans-serif;
