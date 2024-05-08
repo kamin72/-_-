@@ -9,7 +9,6 @@ function barDisplay() {
     nav.classList.remove("hidden");
   }
 }
-fa_bars.onclick = barDisplay;
 
 function barHidden() {
   if (window.innerWidth <= 767) {
@@ -18,7 +17,9 @@ function barHidden() {
     nav.classList.add("hidden");
   }
 }
+
+fa_bars.onclick = barDisplay;
 fa_xmark.onclick = barHidden;
 
-//點擊空白處可以取消menu
+//點擊空白處可以取消menu_捕獲事件，讓document事件先發生
 document.addEventListener("click", barHidden, true);
