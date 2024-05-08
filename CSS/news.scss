@@ -57,6 +57,7 @@ body {
   .clicked {
     background: #ccc;
     outline-color: rgb(204, 204, 204, 0.5);
+    color: #333;
     &:hover {
       outline-color: rgb(204, 204, 204, 0);
     }
