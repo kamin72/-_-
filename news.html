@@ -311,6 +311,7 @@
       var publications = document.getElementsByClassName("pub");
       var activities = document.getElementsByClassName("act");
       var news = document.getElementsByClassName("news");
+      var btn = document.getElementsByClassName("btn-5");
       //公告按鈕
       function sortPub() {
         for (var i = 0; i <= publications.length - 1; i++) {
@@ -322,6 +323,11 @@
         for (var i = 0; i <= news.length - 1; i++) {
           news[i].style.display = "none";
         }
+
+        //btn_clicked
+        btn[0].classList.add("clicked");
+        btn[1].classList.remove("clicked");
+        btn[2].classList.remove("clicked");
       }
       document.getElementById("publication").onclick = sortPub;
       //活動按鈕
@@ -335,6 +341,9 @@
         for (var i = 0; i <= news.length - 1; i++) {
           news[i].style.display = "none";
         }
+        btn[0].classList.remove("clicked");
+        btn[1].classList.add("clicked");
+        btn[2].classList.remove("clicked");
       }
       document.getElementById("activity").onclick = sortAct;
       //news按鈕
@@ -348,6 +357,9 @@
         for (var i = 0; i <= news.length - 1; i++) {
           news[i].style.display = "block";
         }
+        btn[0].classList.remove("clicked");
+        btn[1].classList.remove("clicked");
+        btn[2].classList.add("clicked");
       }
       document.getElementById("latest").onclick = sortNew;
       //點擊第二頁時將第一頁過多內容隱藏
@@ -375,11 +387,10 @@
         }
       }
       window.onload = hidden;
-      //頁碼標示功能
+      //
     </script>
-
-    <script src="./nav_bar.js"></script>
     <script>
+      //導覽列底線效果於手機版時移除
       let lis = document.querySelectorAll("li");
       for (let i = 0; i <= lis.length - 1; i++) {
         if (lis[i].classList.contains("underline") && window.innerWidth < 768) {
@@ -387,6 +398,7 @@
         }
       }
     </script>
+    <script src="./nav_bar.js"></script>
     <script src="./return_top.js"></script>
   </body>
 </html>
