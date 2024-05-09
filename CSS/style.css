@@ -868,10 +868,11 @@ section.news .news_container .news_content .card2 .txt h3 {
   font-weight: bold;
 }
 section.news .news_container .news_content .card2 .txt p {
+  height: 100px;
   color: #fff;
-  padding: 20px 0;
+  margin: 20px 0;
   flex-grow: 1;
-  line-height: 40px;
+  line-height: 30px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
@@ -993,7 +994,7 @@ section.news .news_container .news_content .card1 .txt h3 {
 }
 section.news .news_container .news_content .card1 .txt p {
   color: #fff;
-  padding: 20px 0;
+  margin: 20px 0;
   flex-grow: 1;
   line-height: 30px;
   display: -webkit-box;
@@ -1138,7 +1139,7 @@ section.news .news_container .news_content .card3 .txt h3 {
 }
 section.news .news_container .news_content .card3 .txt p {
   color: #fff;
-  padding: 20px 0;
+  margin: 20px 0;
   flex-grow: 1;
   line-height: 30px;
   display: -webkit-box;
