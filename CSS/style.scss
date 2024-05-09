@@ -42,6 +42,8 @@ section.banner {
           margin: auto;
           img {
             width: 100%;
+            object-fit: cover;
+            object-position: center;
             height: 100%;
           }
         }
@@ -191,7 +193,6 @@ section.feature {
     background-size: 150px 250px, 300px 200px, 400px 100px;
     .ft_container {
       width: 500px;
-
       margin: auto;
       padding-top: 100px;
       .ft_content {
