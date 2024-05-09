@@ -20,19 +20,26 @@ body {
   position: absolute;
   z-index: -1;
 }
-
-.content {
+.form_container h2 {
+  padding: 50px 0 0;
+  color: #0369b5;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.form_container .content {
   margin: 50px 0;
   width: 100%;
   position: relative;
   display: flex;
 }
 @media (max-width: 767px) {
-  .content {
+  .form_container .content {
     display: block;
   }
 }
-.content .introduction {
+.form_container .content .introduction {
   width: 60%;
   height: 600px;
   background-image: url(../reservation_pic/Rectangle\ 102.jpg);
@@ -41,17 +48,17 @@ body {
   background-position: center;
 }
 @media (max-width: 767px) {
-  .content .introduction {
+  .form_container .content .introduction {
     width: 100%;
     height: 300px;
   }
 }
 @media (max-width: 576px) {
-  .content .introduction {
+  .form_container .content .introduction {
     height: 200px;
   }
 }
-.content .card_list {
+.form_container .content .card_list {
   width: 50%;
   display: flex;
   position: absolute;
@@ -59,13 +66,13 @@ body {
   left: 5%;
 }
 @media screen and (max-width: 899px) {
-  .content .card_list {
+  .form_container .content .card_list {
     width: 400px;
     left: 2%;
   }
 }
 @media (max-width: 767px) {
-  .content .card_list {
+  .form_container .content .card_list {
     width: 80%;
     top: 20px;
     left: 50%;
@@ -73,12 +80,12 @@ body {
   }
 }
 @media (max-width: 370px) {
-  .content .card_list {
+  .form_container .content .card_list {
     left: 20%;
     translate: -20% 0;
   }
 }
-.content .card_list .card {
+.form_container .content .card_list .card {
   width: 25%;
   height: 250px;
   display: flex;
@@ -90,32 +97,32 @@ body {
   text-align: center;
 }
 @media (max-width: 576px) {
-  .content .card_list .card {
+  .form_container .content .card_list .card {
     height: 150px;
     min-width: 100px;
   }
 }
-.content .card_list .card h3 {
+.form_container .content .card_list .card h3 {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
 }
 @media (max-width: 576px) {
-  .content .card_list .card h3 {
+  .form_container .content .card_list .card h3 {
     font-size: 16px;
   }
 }
-.content .card_list .card .price {
+.form_container .content .card_list .card .price {
   font-size: 32px;
   font-weight: bold;
   color: #fff;
 }
 @media (max-width: 576px) {
-  .content .card_list .card .price {
+  .form_container .content .card_list .card .price {
     font-size: 20px;
   }
 }
-.content .card_list .card .btn {
+.form_container .content .card_list .card .btn {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -128,22 +135,22 @@ body {
   text-transform: uppercase;
 }
 @media (max-width: 576px) {
-  .content .card_list .card .btn {
+  .form_container .content .card_list .card .btn {
     font-size: 14px;
     text-transform: unset;
   }
 }
-.content .card_list .card .btn-1 {
+.form_container .content .card_list .card .btn-1 {
   font-weight: 100;
 }
-.content .card_list .card .btn-1 svg {
+.form_container .content .card_list .card .btn-1 svg {
   height: 40px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
 }
-.content .card_list .card .btn-1 rect {
+.form_container .content .card_list .card .btn-1 rect {
   fill: none;
   stroke: #fff;
   stroke-width: 2;
@@ -151,38 +158,38 @@ body {
   transition: all 0.35s linear;
 }
 @media (max-width: 576px) {
-  .content .card_list .card .btn-1 rect {
+  .form_container .content .card_list .card .btn-1 rect {
     transition: unset;
   }
 }
-.content .card_list .card .btn-1:hover {
+.form_container .content .card_list .card .btn-1:hover {
   font-weight: 900;
   letter-spacing: 1px;
 }
 @media (max-width: 576px) {
-  .content .card_list .card .btn-1:hover {
+  .form_container .content .card_list .card .btn-1:hover {
     font-weight: 0;
     letter-spacing: unset;
   }
 }
-.content .card_list .card .btn-1:hover rect {
+.form_container .content .card_list .card .btn-1:hover rect {
   stroke-width: 5;
   stroke-dasharray: 60, 90;
   stroke-dashoffset: 48;
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 @media (max-width: 576px) {
-  .content .card_list .card .btn-1:hover rect {
+  .form_container .content .card_list .card .btn-1:hover rect {
     stroke-width: unset;
     stroke-dasharray: unset;
     stroke-dashoffset: unset;
     transition: unset;
   }
 }
-.content .card_list .card:nth-child(1) {
+.form_container .content .card_list .card:nth-child(1) {
   background-color: #0369b5;
 }
-.content .card_list .card:nth-child(2) {
+.form_container .content .card_list .card:nth-child(2) {
   background-color: #e89b04;
   height: 300px;
   width: 200px;
@@ -190,27 +197,26 @@ body {
   top: -20px;
 }
 @media screen and (max-width: 899px) {
-  .content .card_list .card:nth-child(2) {
+  .form_container .content .card_list .card:nth-child(2) {
     width: 150px;
   }
 }
 @media (max-width: 767px) {
-  .content .card_list .card:nth-child(2) {
+  .form_container .content .card_list .card:nth-child(2) {
     height: unset;
     top: 0;
     width: 25%;
   }
 }
 @media (max-width: 576px) {
-  .content .card_list .card:nth-child(2) {
+  .form_container .content .card_list .card:nth-child(2) {
     width: 100px;
   }
 }
-.content .card_list .card:nth-child(3) {
+.form_container .content .card_list .card:nth-child(3) {
   background-color: #5cc60a;
 }
-
-.form {
+.form_container .form {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -218,50 +224,50 @@ body {
   align-items: center;
 }
 @media screen and (max-width: 899px) {
-  .form {
+  .form_container .form {
     width: 50%;
   }
 }
 @media (max-width: 767px) {
-  .form {
+  .form_container .form {
     width: 100%;
     gap: 20px;
     height: 400px;
   }
 }
 @media (max-width: 576px) {
-  .form {
+  .form_container .form {
     padding: 10px;
     height: 500px;
   }
 }
-.form div {
+.form_container .form div {
   display: flex;
   align-items: center;
   width: 300px;
 }
 @media (max-width: 767px) {
-  .form div {
+  .form_container .form div {
     width: 50%;
   }
 }
 @media (max-width: 576px) {
-  .form div {
+  .form_container .form div {
     flex-direction: column;
     align-items: flex-start;
     width: 200px;
   }
 }
-.form div label {
+.form_container .form div label {
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 5px;
 }
 @media (max-width: 576px) {
-  .form div label {
+  .form_container .form div label {
     padding: 10px 0;
   }
 }
-.form div select {
+.form_container .form div select {
   padding: 5px 0;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -270,11 +276,11 @@ body {
   flex-grow: 1;
 }
 @media (max-width: 576px) {
-  .form div select {
+  .form_container .form div select {
     margin: 5px 0;
   }
 }
-.form div input {
+.form_container .form div input {
   flex-grow: 1;
   letter-spacing: 2px;
   padding: 5px 5px;
@@ -285,11 +291,11 @@ body {
   color: #333;
 }
 @media (max-width: 576px) {
-  .form div input {
+  .form_container .form div input {
     margin: unset;
   }
 }
-.form div a {
+.form_container .form div a {
   background: #0369b5;
   border-bottom: 1px solid;
   border-radius: 10px;
@@ -299,17 +305,17 @@ body {
   text-decoration: none;
   text-align: center;
 }
-.form div a:hover {
+.form_container .form div a:hover {
   background: #0369b5;
   color: #fff;
 }
 @media (max-width: 767px) {
-  .form div a:hover {
+  .form_container .form div a:hover {
     background: unset;
     color: unset;
   }
 }
-.form div .btn {
+.form_container .form div .btn {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
@@ -322,7 +328,7 @@ body {
   text-transform: uppercase;
   width: 80px;
 }
-.form div .btn-5 {
+.form_container .form div .btn-5 {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
   outline-color: rgba(3, 105, 181, 0.5);
@@ -330,21 +336,21 @@ body {
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-.form div .btn-5:hover {
+.form_container .form div .btn-5:hover {
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
   outline-color: rgba(3, 105, 181, 0);
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388;
 }
 @media (max-width: 767px) {
-  .form div .btn-5:hover {
+  .form_container .form div .btn-5:hover {
     box-shadow: unset;
     outline-color: unset;
     outline-offset: unset;
     text-shadow: unset;
   }
 }
-.form div .reset {
+.form_container .form div .reset {
   background-color: rgba(255, 255, 255, 0.7);
   color: #333;
   cursor: pointer;
@@ -360,17 +366,17 @@ body {
   margin: auto;
 }
 @media (max-width: 767px) {
-  .form div .reset {
+  .form_container .form div .reset {
     margin-left: 10px;
   }
 }
 @media (max-width: 767px) {
-  .form div.icon {
+  .form_container .form div.icon {
     width: 200px;
   }
 }
 @media (max-width: 576px) {
-  .form div.icon {
+  .form_container .form div.icon {
     flex-direction: row;
   }
 }/*# sourceMappingURL=reservation.css.map */
