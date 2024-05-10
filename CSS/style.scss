@@ -800,11 +800,11 @@ section.news {
             -webkit-line-clamp: 3;
             overflow: hidden;
             @media screen and (max-width: 767px) {
-              padding: 20px 0 20px;
-              line-height: 35px;
+              line-height: 28px;
             }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -907,8 +907,12 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 767px) {
+              line-height: 28px;
+            }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -1037,8 +1041,12 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 767px) {
+              line-height: 28px;
+            }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -1102,6 +1110,7 @@ section.news {
           border: none;
           background-color: transparent;
           i {
+            font-size: 20px;
             background-color: #0369b5;
             width: 40px;
             height: 40px;
