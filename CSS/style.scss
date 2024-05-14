@@ -1,5 +1,4 @@
 body {
-  // overflow-x: hidden;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
@@ -1142,6 +1141,7 @@ section.news {
   right: 0;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
   .circle {
     background-color: #0369b5;

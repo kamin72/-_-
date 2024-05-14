@@ -7,3 +7,9 @@ $(function () {
     }
   });
 });
+
+$(function () {
+  $(".returnTop").click(function () {
+    $("html").animate({ scrollTop: 0 }, 500);
+  });
+});

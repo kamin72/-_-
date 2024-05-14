@@ -203,6 +203,7 @@ section .content .page_num span:first-child a:first-child {
   right: 0;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .returnTop .circle {
