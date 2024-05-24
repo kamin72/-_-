@@ -1,5 +1,4 @@
 body {
-  // overflow-x: hidden;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
@@ -800,11 +799,11 @@ section.news {
             -webkit-line-clamp: 3;
             overflow: hidden;
             @media screen and (max-width: 767px) {
-              padding: 20px 0 20px;
-              line-height: 35px;
+              line-height: 28px;
             }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -907,8 +906,12 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 767px) {
+              line-height: 28px;
+            }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -1037,8 +1040,12 @@ section.news {
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
             overflow: hidden;
+            @media screen and (max-width: 767px) {
+              line-height: 28px;
+            }
             @media screen and (max-width: 576px) {
               -webkit-line-clamp: 5;
+              line-height: 32px;
             }
           }
           .btn {
@@ -1097,30 +1104,33 @@ section.news {
         font-size: 32px;
         position: absolute;
         top: 50%;
-        i {
-          background-color: #0369b5;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          position: relative;
-          color: #fff;
-          cursor: pointer;
+
+        button {
+          border: none;
+          background-color: transparent;
+          i {
+            font-size: 20px;
+            background-color: #0369b5;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: relative;
+            color: #fff;
+            cursor: pointer;
+          }
+          .fa-chevron-left:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          .fa-chevron-right:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
-        .fa-chevron-left:before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-        .fa-chevron-right:before {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-      @media screen and (max-width: 576px) {
-        justify-content: space-between;
       }
     }
   }
@@ -1131,6 +1141,7 @@ section.news {
   right: 0;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
   .circle {
     background-color: #0369b5;

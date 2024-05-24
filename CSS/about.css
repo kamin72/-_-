@@ -159,6 +159,7 @@ section.introduction .in_container .card .txt ul {
   right: 0;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .returnTop .circle {

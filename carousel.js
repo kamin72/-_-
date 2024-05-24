@@ -51,15 +51,35 @@ document.getElementById("competition").onclick = textSwitch_competition;
 let prev = document.getElementById("prev"),
   next = document.getElementById("next"),
   cards = document.querySelector(".active"),
-  card_content = document.getElementById("card_content");
+  card_content = document.getElementById("card_content"),
+  prev_btn = document.getElementById("pre_btn"),
+  next_btn = document.getElementById("next_btn");
+
+let index = 0;
 
 function nextCards() {
   let cardWidth = cards.offsetWidth;
+
+  index++;
   card_content.scrollLeft = card_content.scrollLeft + cardWidth + 10;
+  prev.style.backgroundColor = " #0369b5";
+  prev_btn.disabled = false;
+  if (index == 2) {
+    next.style.backgroundColor = "#ccc";
+    next_btn.disabled = true;
+  }
 }
 function preCards() {
   let cardWidth = cards.offsetWidth;
+
+  index--;
   card_content.scrollLeft = card_content.scrollLeft - cardWidth - 10;
+  next.style.backgroundColor = " #0369b5";
+  next_btn.disabled = false;
+  if (index == 0) {
+    prev.style.backgroundColor = "#ccc";
+    prev_btn.disabled = true;
+  }
 }
-prev.onclick = preCards;
-next.onclick = nextCards;
+prev_btn.onclick = preCards;
+next_btn.onclick = nextCards;

@@ -880,13 +880,13 @@ section.news .news_container .news_content .card2 .txt p {
 }
 @media screen and (max-width: 767px) {
   section.news .news_container .news_content .card2 .txt p {
-    padding: 20px 0 20px;
-    line-height: 35px;
+    line-height: 28px;
   }
 }
 @media screen and (max-width: 576px) {
   section.news .news_container .news_content .card2 .txt p {
     -webkit-line-clamp: 5;
+    line-height: 32px;
   }
 }
 section.news .news_container .news_content .card2 .txt .btn {
@@ -1002,9 +1002,15 @@ section.news .news_container .news_content .card1 .txt p {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+@media screen and (max-width: 767px) {
+  section.news .news_container .news_content .card1 .txt p {
+    line-height: 28px;
+  }
+}
 @media screen and (max-width: 576px) {
   section.news .news_container .news_content .card1 .txt p {
     -webkit-line-clamp: 5;
+    line-height: 32px;
   }
 }
 section.news .news_container .news_content .card1 .txt .btn {
@@ -1147,9 +1153,15 @@ section.news .news_container .news_content .card3 .txt p {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+@media screen and (max-width: 767px) {
+  section.news .news_container .news_content .card3 .txt p {
+    line-height: 28px;
+  }
+}
 @media screen and (max-width: 576px) {
   section.news .news_container .news_content .card3 .txt p {
     -webkit-line-clamp: 5;
+    line-height: 32px;
   }
 }
 section.news .news_container .news_content .card3 .txt .btn {
@@ -1206,7 +1218,12 @@ section.news .news_container .icon {
     position: absolute;
     top: 50%;
   }
-  section.news .news_container .icon i {
+  section.news .news_container .icon button {
+    border: none;
+    background-color: transparent;
+  }
+  section.news .news_container .icon button i {
+    font-size: 20px;
     background-color: #0369b5;
     width: 40px;
     height: 40px;
@@ -1215,22 +1232,17 @@ section.news .news_container .icon {
     color: #fff;
     cursor: pointer;
   }
-  section.news .news_container .icon .fa-chevron-left:before {
+  section.news .news_container .icon button .fa-chevron-left:before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  section.news .news_container .icon .fa-chevron-right:before {
+  section.news .news_container .icon button .fa-chevron-right:before {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-@media screen and (max-width: 576px) {
-  section.news .news_container .icon {
-    justify-content: space-between;
   }
 }
 
@@ -1240,6 +1252,7 @@ section.news .news_container .icon {
   right: 0;
   z-index: 2;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.5s;
 }
 .returnTop .circle {
