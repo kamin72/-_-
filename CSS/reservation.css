@@ -37,6 +37,12 @@ body {
 @media (max-width: 767px) {
   .form_container .content {
     display: block;
+    height: 900px;
+  }
+}
+@media (max-width: 576px) {
+  .form_container .content {
+    height: 950px;
   }
 }
 .form_container .content .introduction {
@@ -230,7 +236,8 @@ body {
 }
 @media (max-width: 767px) {
   .form_container .form {
-    width: 100%;
+    margin-top: 20px;
+    width: 80%;
     gap: 20px;
     height: 400px;
   }
@@ -238,7 +245,6 @@ body {
 @media (max-width: 576px) {
   .form_container .form {
     padding: 10px;
-    height: 500px;
   }
 }
 .form_container .form label {
@@ -352,12 +358,8 @@ body {
   gap: 20px;
 }
 @media (max-width: 767px) {
-  .form_container .form .icon div.icon {
+  .form_container .form .icon {
     width: 200px;
-  }
-}
-@media (max-width: 576px) {
-  .form_container .form .icon div.icon {
-    flex-direction: row;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=reservation.css.map */

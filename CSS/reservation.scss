@@ -31,6 +31,10 @@ body {
     display: flex;
     @media (max-width: 767px) {
       display: block;
+      height: 900px;
+    }
+    @media (max-width: 576px) {
+      height: 950px;
     }
     .introduction {
       width: 60%;
@@ -191,13 +195,14 @@ body {
       width: 50%;
     }
     @media (max-width: 767px) {
-      width: 100%;
+      margin-top: 20px;
+      width: 80%;
       gap: 20px;
       height: 400px;
     }
     @media (max-width: 576px) {
       padding: 10px;
-      height: 500px;
+      // height: 500px;
     }
 
     label {
@@ -303,14 +308,8 @@ body {
       flex-direction: row;
       gap: 20px;
       @media (max-width: 767px) {
-        div.icon {
-          width: 200px;
-        }
-      }
-      @media (max-width: 576px) {
-        div.icon {
-          flex-direction: row;
-        }
+        width: 200px;
+        margin: 0 auto;
       }
     }
   }
